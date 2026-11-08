@@ -1,0 +1,39 @@
+{
+  "url": "https://cellcast-taupe.vercel.app",
+  "checkedAt": "2026-11-08T10:26:04.350Z",
+  "assets": [
+    {
+      "path": "/",
+      "status": 200,
+      "length": "17314"
+    },
+    {
+      "path": "/icon.svg",
+      "status": 200,
+      "length": null
+    },
+    {
+      "path": "/opengraph-image.png",
+      "status": 200,
+      "length": "110660"
+    },
+    {
+      "path": "/models/scplant.onnx",
+      "status": 200,
+      "length": null
+    },
+    {
+      "path": "/models/scgpt.onnx",
+      "status": 200,
+      "length": null
+    },
+    {
+      "path": "/ort/ort-wasm-simd-threaded.wasm",
+      "status": 200,
+      "length": null
+    }
+  ],
+  "errors": [],
+  "plantModel": "Cell embedding\n\n512 values • 612 ms • numerical error 3.1e-6\n\nExport",
+  "socialImage": "https://cellcast-taupe.vercel.app/opengraph-image.png?opengraph-image.36ksdtkdxaxo2.png"
+}

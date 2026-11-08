@@ -1,0 +1,15 @@
+.git
+.next
+.venv
+node_modules
+.env
+.env.*
+!.env.example
+experiments
+design
+docs/evidence
+public/models/*.onnx
+public/ort
+**/.pentool
+*.tsbuildinfo
+*.log

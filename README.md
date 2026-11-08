@@ -4,9 +4,11 @@
 
 **Explore real cells. Compare measured responses. Run models in your browser.**
 
+### [Open the live app → cellcast-taupe.vercel.app](https://cellcast-taupe.vercel.app)
+
 CellCast brings public single-cell studies, gene-expression comparisons, observed perturbation responses, and browser-side model inference into one research workspace. Start with a plant dataset, follow a gene across cell populations, and keep the source behind every result within reach.
 
-[Quick start](#run-locally) · [Judge walkthrough](#a-five-minute-walkthrough) · [Model provenance](docs/MODEL-LIBRARY.md) · [Recorded evidence](docs/evidence/research-e2e.json) · [Contributing](CONTRIBUTING.md)
+[Live app](https://cellcast-taupe.vercel.app) · [Quick start](#run-locally) · [Judge walkthrough](#a-five-minute-walkthrough) · [Model provenance](docs/MODEL-LIBRARY.md) · [Recorded evidence](docs/evidence/research-e2e.json) · [Contributing](CONTRIBUTING.md)
 
 ![Experiment Lab showing a real single-cell study](docs/evidence/research-experiment-lab-1440.png)
 
@@ -43,7 +45,7 @@ bun run dev
 
 Open **http://127.0.0.1:3000**. `bun run assets` copies ONNX Runtime support files from installed dependencies; it does **not** download model weights.
 
-**Model inference requires an extra preparation step.** Large ONNX binaries and checkpoints are excluded from Git. Follow [Rebuild model assets](docs/REPRODUCIBILITY.md#rebuild-model-assets) to download the pinned checkpoints and export them locally with Python. Dataset exploration and observed comparisons can be used before preparing those models.
+**Model inference requires an extra preparation step locally.** Large ONNX binaries and checkpoints are excluded from Git. Run `bun scripts/deployment-assets.ts` to download SHA-256-verified browser exports from the versioned GitHub release, or follow [Rebuild model assets](docs/REPRODUCIBILITY.md#rebuild-model-assets) to recreate them with Python. Dataset exploration and observed comparisons can be used before preparing those models. See [Vercel deployment](docs/DEPLOYMENT.md) for the automated hosting setup.
 
 ## What the models mean
 
