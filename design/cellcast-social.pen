@@ -1,0 +1,2318 @@
+{
+  "components": [],
+  "fonts": [],
+  "format": "pentool",
+  "name": "cellcast-social",
+  "pages": [
+    {
+      "canvas": {
+        "background": "#151a1e",
+        "height": 630,
+        "width": 1200
+      },
+      "id": "page-1",
+      "layers": [
+        {
+          "id": "layer-1",
+          "locked": false,
+          "name": "Layer 1",
+          "nodes": [],
+          "visible": true
+        },
+        {
+          "id": "art",
+          "locked": false,
+          "name": "CellCast artwork",
+          "nodes": [
+            {
+              "closed": false,
+              "d": "M 98.36 56.62 C 85.20 43.46 62.29 52.73 62.29 73.20 C 62.29 93.68 85.20 102.94 98.36 89.78",
+              "id": "cell-outline",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 4.875
+                }
+              }
+            },
+            {
+              "closed": false,
+              "d": "M 79.84 73.20 L 105.68 73.20",
+              "id": "cell-signal",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 3.4124999046325684
+                }
+              }
+            },
+            {
+              "cx": 79.8375,
+              "cy": 73.2,
+              "id": "cell-nucleus",
+              "kind": "ellipse",
+              "radius_x": 4.875,
+              "radius_y": 4.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 105.67500000000001,
+              "cy": 73.2,
+              "id": "cell-output",
+              "kind": "ellipse",
+              "radius_x": 2.9250000000000003,
+              "radius_y": 2.9250000000000003,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 96.4125,
+              "cy": 61.9875,
+              "id": "cell-satellite",
+              "kind": "ellipse",
+              "radius_x": 1.9500000000000002,
+              "radius_y": 1.9500000000000002,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "align": "left",
+              "content": "CellCast AI",
+              "font_family": "Arial",
+              "font_size": 25.5,
+              "font_weight": 600,
+              "id": "brand",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#e4e9ed"
+                }
+              },
+              "x": 127.5,
+              "y": 87.0
+            },
+            {
+              "align": "left",
+              "content": "A WORKSPACE FOR SINGLE-CELL RESEARCH",
+              "font_family": "Arial",
+              "font_size": 12.0,
+              "font_weight": 400,
+              "id": "eyebrow",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                }
+              },
+              "x": 66.0,
+              "y": 159.75
+            },
+            {
+              "align": "left",
+              "content": "Real cells.",
+              "font_family": "Arial",
+              "font_size": 67.5,
+              "font_weight": 600,
+              "id": "headline-1",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#e4e9ed"
+                }
+              },
+              "x": 61.5,
+              "y": 242.25
+            },
+            {
+              "align": "left",
+              "content": "Clearer questions.",
+              "font_family": "Arial",
+              "font_size": 67.5,
+              "font_weight": 600,
+              "id": "headline-2",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#e4e9ed"
+                }
+              },
+              "x": 61.5,
+              "y": 318.75
+            },
+            {
+              "align": "left",
+              "content": "Explore public studies. Compare measured responses.",
+              "font_family": "Arial",
+              "font_size": 18.0,
+              "font_weight": 400,
+              "id": "description-1",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#a6b1b9"
+                }
+              },
+              "x": 66.0,
+              "y": 375.75
+            },
+            {
+              "align": "left",
+              "content": "Run single-cell models in your browser.",
+              "font_family": "Arial",
+              "font_size": 18.0,
+              "font_weight": 400,
+              "id": "description-2",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#a6b1b9"
+                }
+              },
+              "x": 66.0,
+              "y": 405.0
+            },
+            {
+              "closed": false,
+              "d": "M 66.0 465.0 L 1134.0 465.0",
+              "id": "divider",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#303940"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 1.0
+                }
+              }
+            },
+            {
+              "align": "left",
+              "content": "OPEN SOURCE  /  REAL DATA  /  LOCAL INFERENCE",
+              "font_family": "Arial",
+              "font_size": 12.0,
+              "font_weight": 400,
+              "id": "footer",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#a6b1b9"
+                }
+              },
+              "x": 66.0,
+              "y": 506.25
+            },
+            {
+              "align": "left",
+              "content": "ILLUSTRATIVE CELL POPULATIONS",
+              "font_family": "Arial",
+              "font_size": 9.0,
+              "font_weight": 400,
+              "id": "figure-label",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#a6b1b9"
+                }
+              },
+              "x": 817.5,
+              "y": 434.25
+            },
+            {
+              "cx": 900.1195823845068,
+              "cy": 217.5,
+              "id": "population-0-0",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 882.7685734610079,
+              "cy": 224.27523886184628,
+              "id": "population-0-1",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 893.989543321672,
+              "cy": 204.60077276271736,
+              "id": "population-0-2",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 904.7658464635446,
+              "cy": 229.65893739122447,
+              "id": "population-0-3",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 869.9906797617894,
+              "cy": 214.47401403650255,
+              "id": "population-0-4",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 913.8227740821635,
+              "cy": 207.19148320382527,
+              "id": "population-0-5",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 885.3679807236715,
+              "cy": 237.66348558293762,
+              "id": "population-0-6",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 878.8983539054326,
+              "cy": 197.59633042545545,
+              "id": "population-0-7",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 922.0100598335501,
+              "cy": 225.69049344061733,
+              "id": "population-0-8",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 861.7997468530584,
+              "cy": 227.1312463025659,
+              "id": "population-0-9",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 907.2994906366629,
+              "cy": 193.46436074462048,
+              "id": "population-0-10",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 903.4365889357626,
+              "cy": 243.99911786124875,
+              "id": "population-0-11",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 859.537206875633,
+              "cy": 202.98210684214348,
+              "id": "population-0-12",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 931.1690213781604,
+              "cy": 211.03893832516866,
+              "id": "population-0-13",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 868.9009906626944,
+              "cy": 243.01121778789403,
+              "id": "population-0-14",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 887.0479124725875,
+              "cy": 185.52509335384883,
+              "id": "population-0-15",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 925.9696835909048,
+              "cy": 238.93813651086344,
+              "id": "population-0-16",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 847.4604441999827,
+              "cy": 218.91565445767117,
+              "id": "population-0-17",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 925.3527686351226,
+              "cy": 192.65319603292917,
+              "id": "population-0-18",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 890.3022209296482,
+              "cy": 253.6254563047265,
+              "id": "population-0-19",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 861.240184429196,
+              "cy": 189.03088900551546,
+              "id": "population-0-20",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 942.0187589250892,
+              "cy": 222.56345117629115,
+              "id": "population-0-21",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 850.5430304893407,
+              "cy": 239.6865897623382,
+              "id": "population-0-22",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 903.9648283956037,
+              "cy": 178.76768738691652,
+              "id": "population-0-23",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 919.0184296089969,
+              "cy": 252.6709791146561,
+              "id": "population-0-24",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 840.6594112054721,
+              "cy": 204.93094236618498,
+              "id": "population-0-25",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 942.856303460195,
+              "cy": 199.8176466416864,
+              "id": "population-0-26",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 870.6846542301574,
+              "cy": 257.1169466327789,
+              "id": "population-0-27",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 873.029647822,
+              "cy": 176.36010121038805,
+              "id": "population-0-28",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 944.307772333095,
+              "cy": 238.19348723524547,
+              "id": "population-0-29",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 834.9549064558942,
+              "cy": 229.0285358593934,
+              "id": "population-0-30",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 925.208725468079,
+              "cy": 178.83851144718537,
+              "id": "population-0-31",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 902.9053990138397,
+              "cy": 263.51296334552126,
+              "id": "population-0-32",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 843.1893575765847,
+              "cy": 188.47686533457434,
+              "id": "population-0-33",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 955.5768611192602,
+              "cy": 213.52802334720965,
+              "id": "population-0-34",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1053.8695823845069,
+              "cy": 307.5,
+              "id": "population-1-0",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1036.518573461008,
+              "cy": 314.2752388618463,
+              "id": "population-1-1",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1047.739543321672,
+              "cy": 294.6007727627174,
+              "id": "population-1-2",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1058.5158464635447,
+              "cy": 319.65893739122447,
+              "id": "population-1-3",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1023.7406797617894,
+              "cy": 304.4740140365026,
+              "id": "population-1-4",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1067.5727740821635,
+              "cy": 297.19148320382527,
+              "id": "population-1-5",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1039.1179807236715,
+              "cy": 327.6634855829376,
+              "id": "population-1-6",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1032.6483539054325,
+              "cy": 287.59633042545545,
+              "id": "population-1-7",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1075.7600598335503,
+              "cy": 315.69049344061733,
+              "id": "population-1-8",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1015.5497468530584,
+              "cy": 317.1312463025659,
+              "id": "population-1-9",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1061.049490636663,
+              "cy": 283.4643607446205,
+              "id": "population-1-10",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1057.1865889357628,
+              "cy": 333.99911786124875,
+              "id": "population-1-11",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1013.287206875633,
+              "cy": 292.9821068421435,
+              "id": "population-1-12",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1084.9190213781603,
+              "cy": 301.03893832516866,
+              "id": "population-1-13",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1022.6509906626944,
+              "cy": 333.011217787894,
+              "id": "population-1-14",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1040.7979124725875,
+              "cy": 275.5250933538489,
+              "id": "population-1-15",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1079.7196835909049,
+              "cy": 328.93813651086344,
+              "id": "population-1-16",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1001.2104441999827,
+              "cy": 308.91565445767117,
+              "id": "population-1-17",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1079.1027686351226,
+              "cy": 282.65319603292915,
+              "id": "population-1-18",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1044.0522209296482,
+              "cy": 343.6254563047265,
+              "id": "population-1-19",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1014.990184429196,
+              "cy": 279.03088900551546,
+              "id": "population-1-20",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1095.768758925089,
+              "cy": 312.56345117629115,
+              "id": "population-1-21",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1004.2930304893407,
+              "cy": 329.6865897623382,
+              "id": "population-1-22",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1057.7148283956037,
+              "cy": 268.7676873869165,
+              "id": "population-1-23",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1072.768429608997,
+              "cy": 342.6709791146561,
+              "id": "population-1-24",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 994.4094112054721,
+              "cy": 294.930942366185,
+              "id": "population-1-25",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1096.606303460195,
+              "cy": 289.8176466416864,
+              "id": "population-1-26",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1024.4346542301573,
+              "cy": 347.1169466327789,
+              "id": "population-1-27",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1026.779647822,
+              "cy": 266.36010121038805,
+              "id": "population-1-28",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1098.057772333095,
+              "cy": 328.19348723524547,
+              "id": "population-1-29",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 988.7049064558942,
+              "cy": 319.0285358593934,
+              "id": "population-1-30",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1078.9587254680791,
+              "cy": 268.8385114471854,
+              "id": "population-1-31",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1056.6553990138395,
+              "cy": 353.51296334552126,
+              "id": "population-1-32",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 996.9393575765847,
+              "cy": 278.4768653345743,
+              "id": "population-1-33",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 1109.3268611192602,
+              "cy": 303.5280233472097,
+              "id": "population-1-34",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 896.3695823845068,
+              "cy": 348.75,
+              "id": "population-2-0",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 879.0185734610079,
+              "cy": 355.5252388618463,
+              "id": "population-2-1",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 890.239543321672,
+              "cy": 335.8507727627174,
+              "id": "population-2-2",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 901.0158464635446,
+              "cy": 360.90893739122447,
+              "id": "population-2-3",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 866.2406797617894,
+              "cy": 345.7240140365026,
+              "id": "population-2-4",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 910.0727740821635,
+              "cy": 338.44148320382527,
+              "id": "population-2-5",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 881.6179807236715,
+              "cy": 368.9134855829376,
+              "id": "population-2-6",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 875.1483539054326,
+              "cy": 328.84633042545545,
+              "id": "population-2-7",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 918.2600598335501,
+              "cy": 356.94049344061733,
+              "id": "population-2-8",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 858.0497468530584,
+              "cy": 358.3812463025659,
+              "id": "population-2-9",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 903.5494906366629,
+              "cy": 324.7143607446205,
+              "id": "population-2-10",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 899.6865889357626,
+              "cy": 375.24911786124875,
+              "id": "population-2-11",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 855.787206875633,
+              "cy": 334.2321068421435,
+              "id": "population-2-12",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 927.4190213781604,
+              "cy": 342.28893832516866,
+              "id": "population-2-13",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 865.1509906626944,
+              "cy": 374.261217787894,
+              "id": "population-2-14",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 883.2979124725875,
+              "cy": 316.7750933538489,
+              "id": "population-2-15",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 922.2196835909048,
+              "cy": 370.18813651086344,
+              "id": "population-2-16",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 843.7104441999827,
+              "cy": 350.16565445767117,
+              "id": "population-2-17",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 921.6027686351226,
+              "cy": 323.90319603292915,
+              "id": "population-2-18",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 886.5522209296482,
+              "cy": 384.8754563047265,
+              "id": "population-2-19",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 857.490184429196,
+              "cy": 320.28088900551546,
+              "id": "population-2-20",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 938.2687589250892,
+              "cy": 353.81345117629115,
+              "id": "population-2-21",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 846.7930304893407,
+              "cy": 370.9365897623382,
+              "id": "population-2-22",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 900.2148283956037,
+              "cy": 310.0176873869165,
+              "id": "population-2-23",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 915.2684296089969,
+              "cy": 383.9209791146561,
+              "id": "population-2-24",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 836.9094112054721,
+              "cy": 336.180942366185,
+              "id": "population-2-25",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 939.106303460195,
+              "cy": 331.0676466416864,
+              "id": "population-2-26",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 866.9346542301574,
+              "cy": 388.36694663277893,
+              "id": "population-2-27",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 869.279647822,
+              "cy": 307.61010121038805,
+              "id": "population-2-28",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 940.557772333095,
+              "cy": 369.44348723524547,
+              "id": "population-2-29",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 831.2049064558942,
+              "cy": 360.2785358593934,
+              "id": "population-2-30",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 921.458725468079,
+              "cy": 310.0885114471854,
+              "id": "population-2-31",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 899.1553990138397,
+              "cy": 394.76296334552126,
+              "id": "population-2-32",
+              "kind": "ellipse",
+              "radius_x": 2.925,
+              "radius_y": 2.925,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 839.4393575765847,
+              "cy": 319.7268653345743,
+              "id": "population-2-33",
+              "kind": "ellipse",
+              "radius_x": 1.875,
+              "radius_y": 1.875,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 951.8268611192602,
+              "cy": 344.7780233472097,
+              "id": "population-2-34",
+              "kind": "ellipse",
+              "radius_x": 2.4000000000000004,
+              "radius_y": 2.4000000000000004,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "name": "Page 1"
+    }
+  ],
+  "styles": {},
+  "version": 4
+}

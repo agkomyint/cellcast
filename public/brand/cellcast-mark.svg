@@ -1,0 +1,12 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+    <defs/>
+    <path fill="#151a1e" stroke="none" d="M 0 0 L 128 0 L 128 128 L 0 128 Z"/>
+    <g id="layer-1"/>
+    <g id="art">
+        <path fill="none" stroke="#80c9bd" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M 91 30 C 64 3 17 22 17 64 C 17 106 64 125 91 98"/>
+        <path fill="none" stroke="#80c9bd" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" d="M 53 64 L 106 64"/>
+        <path fill="#80c9bd" stroke="none" d="M 43 64 C 43 69.52285 47.477158 74 53 74 C 58.522842 74 63 69.52285 63 64 C 63 58.477154 58.522842 54 53 54 C 47.477158 54 43 58.477154 43 64 Z"/>
+        <path fill="#d5b98b" stroke="none" d="M 100 64 C 100 67.313705 102.68629 70 106 70 C 109.31371 70 112 67.313705 112 64 C 112 60.68629 109.31371 58 106 58 C 102.68629 58 100 60.68629 100 64 Z"/>
+        <path fill="#b0a4d3" stroke="none" d="M 83 41 C 83 43.20914 84.79086 45 87 45 C 89.20914 45 91 43.20914 91 41 C 91 38.79086 89.20914 37 87 37 C 84.79086 37 83 38.79086 83 41 Z"/>
+    </g>
+</svg>

@@ -1,0 +1,183 @@
+{
+  "components": [],
+  "fonts": [],
+  "format": "pentool",
+  "name": "cellcast-wordmark",
+  "pages": [
+    {
+      "canvas": {
+        "background": "#151a1e",
+        "height": 128,
+        "width": 560
+      },
+      "id": "page-1",
+      "layers": [
+        {
+          "id": "layer-1",
+          "locked": false,
+          "name": "Layer 1",
+          "nodes": [],
+          "visible": true
+        },
+        {
+          "id": "art",
+          "locked": false,
+          "name": "CellCast artwork",
+          "nodes": [
+            {
+              "closed": false,
+              "d": "M 77.35 25.50 C 54.40 2.55 14.45 18.70 14.45 54.40 C 14.45 90.10 54.40 106.25 77.35 83.30",
+              "id": "cell-outline",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 8.5
+                }
+              }
+            },
+            {
+              "closed": false,
+              "d": "M 45.05 54.40 L 90.10 54.40",
+              "id": "cell-signal",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 5.949999809265137
+                }
+              }
+            },
+            {
+              "cx": 45.05,
+              "cy": 54.4,
+              "id": "cell-nucleus",
+              "kind": "ellipse",
+              "radius_x": 8.5,
+              "radius_y": 8.5,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 90.1,
+              "cy": 54.4,
+              "id": "cell-output",
+              "kind": "ellipse",
+              "radius_x": 5.1,
+              "radius_y": 5.1,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 73.95,
+              "cy": 34.85,
+              "id": "cell-satellite",
+              "kind": "ellipse",
+              "radius_x": 3.4,
+              "radius_y": 3.4,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "align": "left",
+              "content": "CellCast",
+              "font_family": "Arial",
+              "font_size": 62.0,
+              "font_weight": 600,
+              "id": "wordmark",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#e4e9ed"
+                }
+              },
+              "x": 124.0,
+              "y": 80.0
+            },
+            {
+              "align": "left",
+              "content": "AI",
+              "font_family": "Arial",
+              "font_size": 25.0,
+              "font_weight": 400,
+              "id": "ai",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                }
+              },
+              "x": 403.0,
+              "y": 78.0
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "name": "Page 1"
+    }
+  ],
+  "styles": {},
+  "version": 4
+}

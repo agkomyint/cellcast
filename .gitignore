@@ -1,0 +1,24 @@
+node_modules/
+.next/
+.venv/
+experiments/checkpoint/
+public/models/*.onnx
+public/ort/
+__pycache__/
+experiments/scGPT/
+*.tsbuildinfo
+
+experiments/atlas-*
+
+experiments/scplant/checkpoint.pth
+experiments/scplant/*.ipynb
+
+# Local credentials, design caches, and downloaded model weights
+.env
+.env.*
+!.env.example
+**/.pentool/
+*.pth
+*.pt
+*.onnx
+*.log

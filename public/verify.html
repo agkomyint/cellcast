@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>CellCast browser verification</title><style>body{background:#0b0e12;color:#e3e9ef;font:14px monospace;padding:32px}button,select{font:inherit;padding:12px;margin:8px}pre{white-space:pre-wrap}</style><h1>scGPT browser verification</h1><p>Real checkpoint. Seeded synthetic inputs. No biological validation.</p><label>Provider <select id="provider"><option>wasm</option><option>webgpu</option></select></label><label>Precision <select id="precision"><option>fp32</option><option>int8</option></select></label><button id="run">Verify model</button><pre id="output">Ready</pre><script type="module">
+import * as ort from '/ort/ort.webgpu.min.mjs';
+ort.env.wasm.wasmPaths='/ort/';ort.env.wasm.numThreads=1;
+window.verify=async function(provider='wasm',precision='fp32'){
+ const output=document.querySelector('#output');output.textContent='Loading model…';
+ const fixture=await fetch('/models/fixture.json').then(r=>r.json());
+ const before=performance.now();
+ const session=await ort.InferenceSession.create(`/models/scgpt${precision==='int8'?'.int8':''}.onnx`,{executionProviders:[provider]});
+ const loadMs=performance.now()-before;
+ const results=[];
+ try {for(let repeat=0;repeat<3;repeat++){
+  const start=performance.now();const result=await session.run({src:new ort.Tensor('int64',BigInt64Array.from(fixture.src.map(BigInt)),[1,128]),values:new ort.Tensor('float32',Float32Array.from(fixture.values),[1,128]),mask:new ort.Tensor('bool',Uint8Array.from(fixture.mask.map(Number)),[1,128])});
+  const actual=Array.from(result.predicted_expression.data);
+  if(actual.length!==128||!actual.every(Number.isFinite))throw Error('Invalid output');
+  const maxError=Math.max(...actual.map((x,i)=>Math.abs(x-fixture.expected[i])));
+  if(precision==='fp32'&&maxError>0.0002)throw Error(`Parity failed: ${maxError}`);
+  results.push({repeat,latencyMs:performance.now()-start,maxAbsError:maxError});
+ }}finally{await session.release()}
+ const report={provider,precision,userAgent:navigator.userAgent,modelLoadMs:loadMs,sequenceLength:128,results,scientificValidation:false};
+ output.textContent=JSON.stringify(report,null,2);window.lastReport=report;return report;
+};
+document.querySelector('#run').onclick=()=>window.verify(document.querySelector('#provider').value,document.querySelector('#precision').value).catch(e=>{document.querySelector('#output').textContent=String(e);window.lastError=String(e)});
+</script></html>

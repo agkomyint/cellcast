@@ -1,0 +1,25 @@
+{
+  "provider": "webgpu",
+  "precision": "fp32",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+  "modelLoadMs": 2108.2949998378754,
+  "sequenceLength": 128,
+  "results": [
+    {
+      "repeat": 0,
+      "latencyMs": 2192.3200001716614,
+      "maxAbsError": 0.000030517578125
+    },
+    {
+      "repeat": 1,
+      "latencyMs": 157.44000005722046,
+      "maxAbsError": 0.000030517578125
+    },
+    {
+      "repeat": 2,
+      "latencyMs": 131.63000011444092,
+      "maxAbsError": 0.000030517578125
+    }
+  ],
+  "scientificValidation": false
+}

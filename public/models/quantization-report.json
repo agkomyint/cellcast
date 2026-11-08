@@ -1,0 +1,10 @@
+{
+  "bytes": 51410154,
+  "fixture_max_abs_error": 1.0356731414794922,
+  "fixture_mean_abs_error": 0.22025401890277863,
+  "latency_ms": 17.51590007916093,
+  "biological_validation": false,
+  "browser_validation": true,
+  "default_in_app": false,
+  "browser_evidence": "docs/evidence/browser-wasm-int8.json"
+}

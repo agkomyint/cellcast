@@ -1,0 +1,25 @@
+{
+  "provider": "wasm",
+  "precision": "int8",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+  "modelLoadMs": 514.9799997806549,
+  "sequenceLength": 128,
+  "results": [
+    {
+      "repeat": 0,
+      "latencyMs": 163.5350000858307,
+      "maxAbsError": 0.9035243988037109
+    },
+    {
+      "repeat": 1,
+      "latencyMs": 137.09500002861023,
+      "maxAbsError": 0.9035243988037109
+    },
+    {
+      "repeat": 2,
+      "latencyMs": 150.34500002861023,
+      "maxAbsError": 0.9035243988037109
+    }
+  ],
+  "scientificValidation": false
+}

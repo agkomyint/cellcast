@@ -1,0 +1,200 @@
+{
+  "comparisons": [
+    {
+      "gene": "AT3G18780",
+      "study": "E-CURD-4",
+      "results": "Expression comparison\n\nAT3G18780 / CPM\n\n+144.15\nmean difference\n0\n65\n130\n195\n260\nReference\nComparison\nReference\nColumella root cap cell 5\n\n111.68 CPM mean • 167 cells\n\n17.4% expressing\n\nComparison\nColumella root cap cell 6\n\n255.83 CPM mean • 430 cells\n\n31.6% expressing\n\nHow do I read these results?\nExpression source"
+    },
+    {
+      "gene": "AT1G01010",
+      "study": "E-CURD-4",
+      "results": "Expression comparison\n\nAT1G01010 / CPM\n\n+2.15\nmean difference\n0\n2\n4\n6\n8\nReference\nComparison\nReference\nColumella root cap cell 5\n\n3.48 CPM mean • 167 cells\n\n1.2% expressing\n\nComparison\nColumella root cap cell 6\n\n5.63 CPM mean • 430 cells\n\n0.9% expressing\n\nHow do I read these results?\nExpression source"
+    },
+    {
+      "gene": "Os01g0100100",
+      "study": "E-CURD-81",
+      "results": "Expression comparison\n\nOs01g0100100 / CPM\n\n-1.22\nmean difference\n0\n0.65\n1.3\n1.95\n2.6\nReference\nComparison\nReference\nCluster 1\n\n2.47 CPM mean • 1,411 cells\n\n1.5% expressing\n\nComparison\nCluster 2\n\n1.25 CPM mean • 1,358 cells\n\n1.1% expressing\n\nHow do I read these results?\nExpression source"
+    },
+    {
+      "gene": "ENSG00000141510",
+      "study": "E-MTAB-7606",
+      "results": "Expression comparison\n\nENSG00000141510 / CPM\n\n-21.39\nmean difference\n0\n6\n12\n18\n24\nReference\nComparison\nReference\nCluster 1\n\n22.78 CPM mean • 105 cells\n\n12.4% expressing\n\nComparison\nCluster 2\n\n1.39 CPM mean • 69 cells\n\n13.0% expressing\n\nHow do I read these results?\nExpression source"
+    },
+    {
+      "gene": "AT3G18780",
+      "study": "E-ENAD-30",
+      "results": "Observed perturbation response\n\nAT3G18780 / CPM\n\n-125.12\nmean difference\n0\n200\n400\n600\n800\nControl\nPerturbed\nControl\nNone\n\n752.45 CPM mean • 2,741 cells\n\n65.2% expressing\n\nPerturbed\n17beta-estradiol\n\n627.33 CPM mean • 3,985 cells\n\n58.9% expressing\n\nHow do I read these results?\nExpression source"
+    },
+    {
+      "gene": "AT3G18780",
+      "study": "E-GEOD-123013",
+      "results": "Observed perturbation response\n\nAT3G18780 / CPM\n\n-1175.10\nmean difference\n0\n650\n1300\n1950\n2600\nControl\nPerturbed\nControl\nWild type genotype\n\n2520.05 CPM mean • 41,260 cells\n\n90.9% expressing\n\nPerturbed\nRhd6 mutant\n\n1344.96 CPM mean • 5,584 cells\n\n88.4% expressing\n\nHow do I read these results?\nExpression source"
+    },
+    {
+      "gene": "ENSG00000115415",
+      "study": "E-MTAB-6075",
+      "results": "Observed perturbation response\n\nENSG00000115415 / CPM\n\n+15.01\nmean difference\n0\n25\n50\n75\n100\nControl\nPerturbed\nControl\nNone\n\n84.87 CPM mean • 74 cells\n\n75.7% expressing\n\nPerturbed\nLipopolysaccharide\n\n99.88 CPM mean • 85 cells\n\n98.8% expressing\n\nHow do I read these results?\nExpression source"
+    }
+  ],
+  "models": [
+    {
+      "model": "scplant",
+      "cell": "SRR8206656-AACTGTGGACAG",
+      "result": "Cell embedding\n\n512 values • 229 ms • numerical error 3.1e-6\n\nExport"
+    },
+    {
+      "model": "scplant",
+      "cell": "SRR8206654-CTACCATACGGT",
+      "result": "Cell embedding\n\n512 values • 145 ms • numerical error 2.1e-6\n\nExport"
+    },
+    {
+      "model": "scplant",
+      "cell": "SRR8206655-AAGATGTTTTAA",
+      "result": "Cell embedding\n\n512 values • 186 ms • numerical error 3.0e-6\n\nExport"
+    },
+    {
+      "model": "scgpt",
+      "cell": "SAMEA5215594",
+      "result": "Reconstructed expression\n\n128 values • 249 ms • numerical error 2.3e-5\n\nExport"
+    },
+    {
+      "model": "scgpt",
+      "cell": "SAMEA5215595",
+      "result": "Reconstructed expression\n\n128 values • 303 ms • numerical error 1.7e-5\n\nExport"
+    },
+    {
+      "model": "scgpt",
+      "cell": "SAMEA5215581",
+      "result": "Reconstructed expression\n\n128 values • 248 ms • numerical error 1.9e-5\n\nExport"
+    }
+  ],
+  "scroll": [
+    {
+      "case": "wheel over plot",
+      "scrollTop": 428,
+      "headerY": 0
+    },
+    {
+      "case": "table state restored after navigation",
+      "before": 660,
+      "after": 660,
+      "zoom": "110%"
+    }
+  ],
+  "viewports": [
+    {
+      "section": "Experiment Lab",
+      "width": 1440,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 0
+    },
+    {
+      "section": "Dataset Explorer",
+      "width": 1440,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 0
+    },
+    {
+      "section": "Model Library",
+      "width": 1440,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 0
+    },
+    {
+      "section": "Research History",
+      "width": 1440,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 0
+    },
+    {
+      "section": "Experiment Lab",
+      "width": 1280,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 0
+    },
+    {
+      "section": "Dataset Explorer",
+      "width": 1280,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 0
+    },
+    {
+      "section": "Model Library",
+      "width": 1280,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 0
+    },
+    {
+      "section": "Research History",
+      "width": 1280,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 0
+    },
+    {
+      "section": "Experiment Lab",
+      "width": 768,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 105.5
+    },
+    {
+      "section": "Dataset Explorer",
+      "width": 768,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 105.5
+    },
+    {
+      "section": "Model Library",
+      "width": 768,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 105.5
+    },
+    {
+      "section": "Research History",
+      "width": 768,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 105.5
+    },
+    {
+      "section": "Experiment Lab",
+      "width": 375,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 105.5
+    },
+    {
+      "section": "Dataset Explorer",
+      "width": 375,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 105.5
+    },
+    {
+      "section": "Model Library",
+      "width": 375,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 105.5
+    },
+    {
+      "section": "Research History",
+      "width": 375,
+      "overflow": false,
+      "windowScroll": 0,
+      "headerY": 105.5
+    }
+  ],
+  "errors": [],
+  "invalidGene": "Gene ID not found in this source study. Use a stable Ensembl or TAIR identifier, not a gene symbol.\nReload study"
+}

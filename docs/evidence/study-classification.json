@@ -1,0 +1,13 @@
+{
+  "verifiedPlantStudies": [
+    "E-ENAD-30",
+    "E-GEOD-123013"
+  ],
+  "geneticFilter": true,
+  "defaultSort": "Perturbations first",
+  "verifiedOpenPreselects": {
+    "experiment": "perturbation",
+    "grouping": "genotype"
+  },
+  "errors": []
+}

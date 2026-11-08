@@ -1,0 +1,9 @@
+{
+  "status": "Model run complete · real source cell",
+  "metrics": [
+    "203.5 MB · ONNX Runtime Web · background worker · real repository cells",
+    "Observed CPM and prepared model bins; no simulated expression.",
+    "128 output values · 295.3 ms · max error vs. PyTorch 2.29e-5"
+  ],
+  "errors": []
+}

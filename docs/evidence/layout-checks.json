@@ -1,0 +1,17 @@
+[
+  {
+    "width": 1280,
+    "scrollWidth": 1280,
+    "overflow": false
+  },
+  {
+    "width": 768,
+    "scrollWidth": 768,
+    "overflow": false
+  },
+  {
+    "width": 375,
+    "scrollWidth": 375,
+    "overflow": false
+  }
+]

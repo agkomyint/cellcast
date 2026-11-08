@@ -1,0 +1,56 @@
+{
+  "appMetrics": "MODEL ARCHITECTURE\nscGPT Human\n\n 12 layers · 512 dimensions\n\nEXPRESSION WINDOW\n128 genes\n\nFixed sequence · FP32\n\nLOCAL INFERENCE\n842 ms\n\nControl + treatment execution\n\nNUMERICAL PARITY\n3.1e-5\n\nMax error vs. PyTorch fixture",
+  "reports": {
+    "fp32": {
+      "provider": "wasm",
+      "precision": "fp32",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.8127.18 Safari/537.36",
+      "modelLoadMs": 3748.7850000858307,
+      "sequenceLength": 128,
+      "results": [
+        {
+          "repeat": 0,
+          "latencyMs": 497.86500000953674,
+          "maxAbsError": 0.000030517578125
+        },
+        {
+          "repeat": 1,
+          "latencyMs": 416.210000038147,
+          "maxAbsError": 0.000030517578125
+        },
+        {
+          "repeat": 2,
+          "latencyMs": 381.7849998474121,
+          "maxAbsError": 0.000030517578125
+        }
+      ],
+      "scientificValidation": false
+    },
+    "int8": {
+      "provider": "wasm",
+      "precision": "int8",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.8127.18 Safari/537.36",
+      "modelLoadMs": 684.3049998283386,
+      "sequenceLength": 128,
+      "results": [
+        {
+          "repeat": 0,
+          "latencyMs": 214.58500003814697,
+          "maxAbsError": 0.9035243988037109
+        },
+        {
+          "repeat": 1,
+          "latencyMs": 137.4850001335144,
+          "maxAbsError": 0.9035243988037109
+        },
+        {
+          "repeat": 2,
+          "latencyMs": 120.57999992370605,
+          "maxAbsError": 0.9035243988037109
+        }
+      ],
+      "scientificValidation": false
+    }
+  },
+  "errors": []
+}

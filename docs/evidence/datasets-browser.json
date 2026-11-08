@@ -1,0 +1,26 @@
+{
+  "totalCells": 10778,
+  "renderedTableRows": 20,
+  "cellZoom": "110%",
+  "groupZoom": "100%",
+  "headerFixed": true,
+  "expression": "GENE\nAT1G01010\nMEAN (CPM)\n85.515\nMAX (CPM)\n4784.689\nEXPRESSING CELLS\n2,197 / 10,778",
+  "viewports": [
+    {
+      "width": 1440,
+      "documentScroll": 0,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "documentScroll": 0,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "documentScroll": 0,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

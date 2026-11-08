@@ -1,0 +1,145 @@
+{
+  "components": [],
+  "fonts": [],
+  "format": "pentool",
+  "name": "cellcast-mark",
+  "pages": [
+    {
+      "canvas": {
+        "background": "#151a1e",
+        "height": 128,
+        "width": 128
+      },
+      "id": "page-1",
+      "layers": [
+        {
+          "id": "layer-1",
+          "locked": false,
+          "name": "Layer 1",
+          "nodes": [],
+          "visible": true
+        },
+        {
+          "id": "art",
+          "locked": false,
+          "name": "CellCast artwork",
+          "nodes": [
+            {
+              "closed": false,
+              "d": "M 91.00 30.00 C 64.00 3.00 17.00 22.00 17.00 64.00 C 17.00 106.00 64.00 125.00 91.00 98.00",
+              "id": "cell-outline",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 10.0
+                }
+              }
+            },
+            {
+              "closed": false,
+              "d": "M 53.00 64.00 L 106.00 64.00",
+              "id": "cell-signal",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 7.0
+                }
+              }
+            },
+            {
+              "cx": 53.0,
+              "cy": 64.0,
+              "id": "cell-nucleus",
+              "kind": "ellipse",
+              "radius_x": 10.0,
+              "radius_y": 10.0,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 106.0,
+              "cy": 64.0,
+              "id": "cell-output",
+              "kind": "ellipse",
+              "radius_x": 6.0,
+              "radius_y": 6.0,
+              "style": {
+                "fill": {
+                  "fallback": "#d5b98b"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            },
+            {
+              "cx": 87.0,
+              "cy": 41.0,
+              "id": "cell-satellite",
+              "kind": "ellipse",
+              "radius_x": 4.0,
+              "radius_y": 4.0,
+              "style": {
+                "fill": {
+                  "fallback": "#b0a4d3"
+                },
+                "stroke": {
+                  "fallback": "none"
+                },
+                "stroke_width": {
+                  "fallback": 0.0
+                }
+              }
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "name": "Page 1"
+    }
+  ],
+  "styles": {},
+  "version": 4
+}

@@ -1,0 +1,905 @@
+{
+  "task": "UNVALIDATED input ablation; not biological perturbation prediction",
+  "cell_label": "T cell",
+  "selected_gene": "TP53",
+  "mode": "Input ablation",
+  "provider": "wasm",
+  "rows": [
+    {
+      "gene": "TP53",
+      "synthetic_input": 4,
+      "reconstructed_control": 29.84801483154297,
+      "reconstructed_treatment": 31.6861572265625,
+      "delta": 1.8381423950195312
+    },
+    {
+      "gene": "MYC",
+      "synthetic_input": 39,
+      "reconstructed_control": 30.609689712524414,
+      "reconstructed_treatment": 30.632999420166016,
+      "delta": 0.023309707641601562
+    },
+    {
+      "gene": "STAT1",
+      "synthetic_input": 33,
+      "reconstructed_control": 34.51148986816406,
+      "reconstructed_treatment": 34.566734313964844,
+      "delta": 0.05524444580078125
+    },
+    {
+      "gene": "BCL2",
+      "synthetic_input": 22,
+      "reconstructed_control": 34.569053649902344,
+      "reconstructed_treatment": 34.67433166503906,
+      "delta": 0.10527801513671875
+    },
+    {
+      "gene": "IL7R",
+      "synthetic_input": 22,
+      "reconstructed_control": 33.74933624267578,
+      "reconstructed_treatment": 33.76324462890625,
+      "delta": 0.01390838623046875
+    },
+    {
+      "gene": "CD3D",
+      "synthetic_input": 43,
+      "reconstructed_control": 31.63204574584961,
+      "reconstructed_treatment": 31.55538558959961,
+      "delta": -0.07666015625
+    },
+    {
+      "gene": "CD3E",
+      "synthetic_input": 4,
+      "reconstructed_control": 31.484844207763672,
+      "reconstructed_treatment": 31.539079666137695,
+      "delta": 0.05423545837402344
+    },
+    {
+      "gene": "MS4A1",
+      "synthetic_input": 35,
+      "reconstructed_control": 30.895797729492188,
+      "reconstructed_treatment": 30.892677307128906,
+      "delta": -0.00312042236328125
+    },
+    {
+      "gene": "CD79A",
+      "synthetic_input": 10,
+      "reconstructed_control": 31.131694793701172,
+      "reconstructed_treatment": 31.184057235717773,
+      "delta": 0.05236244201660156
+    },
+    {
+      "gene": "NKG7",
+      "synthetic_input": 4,
+      "reconstructed_control": 34.20488739013672,
+      "reconstructed_treatment": 34.21174240112305,
+      "delta": 0.006855010986328125
+    },
+    {
+      "gene": "GNLY",
+      "synthetic_input": 26,
+      "reconstructed_control": 35.282310485839844,
+      "reconstructed_treatment": 35.37643814086914,
+      "delta": 0.09412765502929688
+    },
+    {
+      "gene": "LST1",
+      "synthetic_input": 49,
+      "reconstructed_control": 27.54229736328125,
+      "reconstructed_treatment": 27.610065460205078,
+      "delta": 0.06776809692382812
+    },
+    {
+      "gene": "S100A8",
+      "synthetic_input": 37,
+      "reconstructed_control": 32.55462646484375,
+      "reconstructed_treatment": 32.60390090942383,
+      "delta": 0.049274444580078125
+    },
+    {
+      "gene": "S100A9",
+      "synthetic_input": 38,
+      "reconstructed_control": 33.81401824951172,
+      "reconstructed_treatment": 33.78990173339844,
+      "delta": -0.02411651611328125
+    },
+    {
+      "gene": "FCGR3A",
+      "synthetic_input": 36,
+      "reconstructed_control": 31.247509002685547,
+      "reconstructed_treatment": 31.24116325378418,
+      "delta": -0.0063457489013671875
+    },
+    {
+      "gene": "LYZ",
+      "synthetic_input": 40,
+      "reconstructed_control": 31.531009674072266,
+      "reconstructed_treatment": 31.59054946899414,
+      "delta": 0.059539794921875
+    },
+    {
+      "gene": "MALAT1",
+      "synthetic_input": 26,
+      "reconstructed_control": 41.309932708740234,
+      "reconstructed_treatment": 41.27362823486328,
+      "delta": -0.036304473876953125
+    },
+    {
+      "gene": "ACTB",
+      "synthetic_input": 6,
+      "reconstructed_control": 34.22227478027344,
+      "reconstructed_treatment": 34.197261810302734,
+      "delta": -0.025012969970703125
+    },
+    {
+      "gene": "GAPDH",
+      "synthetic_input": 42,
+      "reconstructed_control": 31.212146759033203,
+      "reconstructed_treatment": 31.270980834960938,
+      "delta": 0.058834075927734375
+    },
+    {
+      "gene": "RPLP0",
+      "synthetic_input": 22,
+      "reconstructed_control": 31.647098541259766,
+      "reconstructed_treatment": 31.7274169921875,
+      "delta": 0.08031845092773438
+    },
+    {
+      "gene": "HLA-DRA",
+      "synthetic_input": 25,
+      "reconstructed_control": 31.27638053894043,
+      "reconstructed_treatment": 31.32598876953125,
+      "delta": 0.04960823059082031
+    },
+    {
+      "gene": "CD14",
+      "synthetic_input": 18,
+      "reconstructed_control": 31.257251739501953,
+      "reconstructed_treatment": 31.36194610595703,
+      "delta": 0.10469436645507812
+    },
+    {
+      "gene": "GZMB",
+      "synthetic_input": 9,
+      "reconstructed_control": 33.556434631347656,
+      "reconstructed_treatment": 33.56983184814453,
+      "delta": 0.013397216796875
+    },
+    {
+      "gene": "PRF1",
+      "synthetic_input": 47,
+      "reconstructed_control": 32.33848190307617,
+      "reconstructed_treatment": 32.272457122802734,
+      "delta": -0.0660247802734375
+    },
+    {
+      "gene": "CCR7",
+      "synthetic_input": 39,
+      "reconstructed_control": 31.96725082397461,
+      "reconstructed_treatment": 32.00273895263672,
+      "delta": 0.035488128662109375
+    },
+    {
+      "gene": "TCF7",
+      "synthetic_input": 32,
+      "reconstructed_control": 32.10775375366211,
+      "reconstructed_treatment": 32.02827453613281,
+      "delta": -0.07947921752929688
+    },
+    {
+      "gene": "JUN",
+      "synthetic_input": 20,
+      "reconstructed_control": 32.93063735961914,
+      "reconstructed_treatment": 33.03525161743164,
+      "delta": 0.1046142578125
+    },
+    {
+      "gene": "FOS",
+      "synthetic_input": 41,
+      "reconstructed_control": 34.12791442871094,
+      "reconstructed_treatment": 34.09646224975586,
+      "delta": -0.031452178955078125
+    },
+    {
+      "gene": "ISG15",
+      "synthetic_input": 27,
+      "reconstructed_control": 32.271766662597656,
+      "reconstructed_treatment": 32.281578063964844,
+      "delta": 0.0098114013671875
+    },
+    {
+      "gene": "IFIT1",
+      "synthetic_input": 22,
+      "reconstructed_control": 33.736751556396484,
+      "reconstructed_treatment": 33.734493255615234,
+      "delta": -0.00225830078125
+    },
+    {
+      "gene": "A1BG",
+      "synthetic_input": 22,
+      "reconstructed_control": 30.724035263061523,
+      "reconstructed_treatment": 30.725906372070312,
+      "delta": 0.0018711090087890625
+    },
+    {
+      "gene": "A1BG-AS1",
+      "synthetic_input": 11,
+      "reconstructed_control": 30.79552459716797,
+      "reconstructed_treatment": 30.862934112548828,
+      "delta": 0.06740951538085938
+    },
+    {
+      "gene": "A1CF",
+      "synthetic_input": 4,
+      "reconstructed_control": 30.718360900878906,
+      "reconstructed_treatment": 30.758434295654297,
+      "delta": 0.040073394775390625
+    },
+    {
+      "gene": "A2M",
+      "synthetic_input": 28,
+      "reconstructed_control": 37.85084533691406,
+      "reconstructed_treatment": 37.878990173339844,
+      "delta": 0.02814483642578125
+    },
+    {
+      "gene": "A2M-AS1",
+      "synthetic_input": 45,
+      "reconstructed_control": 30.743284225463867,
+      "reconstructed_treatment": 30.665706634521484,
+      "delta": -0.07757759094238281
+    },
+    {
+      "gene": "A2ML1",
+      "synthetic_input": 3,
+      "reconstructed_control": 30.17581558227539,
+      "reconstructed_treatment": 30.220806121826172,
+      "delta": 0.04499053955078125
+    },
+    {
+      "gene": "A2ML1-AS1",
+      "synthetic_input": 43,
+      "reconstructed_control": 31.66143226623535,
+      "reconstructed_treatment": 31.522581100463867,
+      "delta": -0.13885116577148438
+    },
+    {
+      "gene": "A2ML1-AS2",
+      "synthetic_input": 42,
+      "reconstructed_control": 26.39667510986328,
+      "reconstructed_treatment": 26.39838409423828,
+      "delta": 0.001708984375
+    },
+    {
+      "gene": "A3GALT2",
+      "synthetic_input": 14,
+      "reconstructed_control": 30.82233428955078,
+      "reconstructed_treatment": 30.795082092285156,
+      "delta": -0.027252197265625
+    },
+    {
+      "gene": "A4GALT",
+      "synthetic_input": 32,
+      "reconstructed_control": 29.66278076171875,
+      "reconstructed_treatment": 29.749469757080078,
+      "delta": 0.08668899536132812
+    },
+    {
+      "gene": "A4GNT",
+      "synthetic_input": 8,
+      "reconstructed_control": 29.923786163330078,
+      "reconstructed_treatment": 29.946317672729492,
+      "delta": 0.022531509399414062
+    },
+    {
+      "gene": "AA06",
+      "synthetic_input": 38,
+      "reconstructed_control": 29.53306770324707,
+      "reconstructed_treatment": 29.539270401000977,
+      "delta": 0.00620269775390625
+    },
+    {
+      "gene": "AAAS",
+      "synthetic_input": 35,
+      "reconstructed_control": 32.58584213256836,
+      "reconstructed_treatment": 32.5584831237793,
+      "delta": -0.0273590087890625
+    },
+    {
+      "gene": "AACS",
+      "synthetic_input": 18,
+      "reconstructed_control": 33.61207580566406,
+      "reconstructed_treatment": 33.61454772949219,
+      "delta": 0.002471923828125
+    },
+    {
+      "gene": "AADAC",
+      "synthetic_input": 3,
+      "reconstructed_control": 32.430381774902344,
+      "reconstructed_treatment": 32.37649917602539,
+      "delta": -0.053882598876953125
+    },
+    {
+      "gene": "AADACL2",
+      "synthetic_input": 49,
+      "reconstructed_control": 24.69805908203125,
+      "reconstructed_treatment": 24.677772521972656,
+      "delta": -0.02028656005859375
+    },
+    {
+      "gene": "AADACL2-AS1",
+      "synthetic_input": 22,
+      "reconstructed_control": 31.642009735107422,
+      "reconstructed_treatment": 31.51536750793457,
+      "delta": -0.12664222717285156
+    },
+    {
+      "gene": "AADACL3",
+      "synthetic_input": 45,
+      "reconstructed_control": 26.954532623291016,
+      "reconstructed_treatment": 26.87879180908203,
+      "delta": -0.07574081420898438
+    },
+    {
+      "gene": "AADACL4",
+      "synthetic_input": 34,
+      "reconstructed_control": 29.014850616455078,
+      "reconstructed_treatment": 28.910547256469727,
+      "delta": -0.10430335998535156
+    },
+    {
+      "gene": "AADAT",
+      "synthetic_input": 39,
+      "reconstructed_control": 29.334774017333984,
+      "reconstructed_treatment": 29.272296905517578,
+      "delta": -0.06247711181640625
+    },
+    {
+      "gene": "AAGAB",
+      "synthetic_input": 38,
+      "reconstructed_control": 32.72295379638672,
+      "reconstructed_treatment": 32.726356506347656,
+      "delta": 0.0034027099609375
+    },
+    {
+      "gene": "AAK1",
+      "synthetic_input": 9,
+      "reconstructed_control": 33.04990005493164,
+      "reconstructed_treatment": 33.1341438293457,
+      "delta": 0.0842437744140625
+    },
+    {
+      "gene": "AAMDC",
+      "synthetic_input": 18,
+      "reconstructed_control": 29.185012817382812,
+      "reconstructed_treatment": 29.177278518676758,
+      "delta": -0.0077342987060546875
+    },
+    {
+      "gene": "AAMP",
+      "synthetic_input": 23,
+      "reconstructed_control": 31.818252563476562,
+      "reconstructed_treatment": 31.801578521728516,
+      "delta": -0.016674041748046875
+    },
+    {
+      "gene": "AANAT",
+      "synthetic_input": 25,
+      "reconstructed_control": 28.90822982788086,
+      "reconstructed_treatment": 28.874895095825195,
+      "delta": -0.03333473205566406
+    },
+    {
+      "gene": "AAR2",
+      "synthetic_input": 2,
+      "reconstructed_control": 30.88790512084961,
+      "reconstructed_treatment": 30.917051315307617,
+      "delta": 0.029146194458007812
+    },
+    {
+      "gene": "AARD",
+      "synthetic_input": 27,
+      "reconstructed_control": 30.039308547973633,
+      "reconstructed_treatment": 29.938154220581055,
+      "delta": -0.10115432739257812
+    },
+    {
+      "gene": "AARS1",
+      "synthetic_input": 7,
+      "reconstructed_control": 30.478168487548828,
+      "reconstructed_treatment": 30.5133056640625,
+      "delta": 0.035137176513671875
+    },
+    {
+      "gene": "AARS2",
+      "synthetic_input": 37,
+      "reconstructed_control": 31.869991302490234,
+      "reconstructed_treatment": 31.855640411376953,
+      "delta": -0.01435089111328125
+    },
+    {
+      "gene": "AARSD1",
+      "synthetic_input": 34,
+      "reconstructed_control": 32.26455307006836,
+      "reconstructed_treatment": 32.18833541870117,
+      "delta": -0.0762176513671875
+    },
+    {
+      "gene": "AASDH",
+      "synthetic_input": 47,
+      "reconstructed_control": 30.697525024414062,
+      "reconstructed_treatment": 30.657093048095703,
+      "delta": -0.040431976318359375
+    },
+    {
+      "gene": "AASDHPPT",
+      "synthetic_input": 37,
+      "reconstructed_control": 31.956905364990234,
+      "reconstructed_treatment": 31.947006225585938,
+      "delta": -0.009899139404296875
+    },
+    {
+      "gene": "AASS",
+      "synthetic_input": 18,
+      "reconstructed_control": 31.914596557617188,
+      "reconstructed_treatment": 31.905195236206055,
+      "delta": -0.009401321411132812
+    },
+    {
+      "gene": "AATBC",
+      "synthetic_input": 49,
+      "reconstructed_control": 26.69696807861328,
+      "reconstructed_treatment": 26.600223541259766,
+      "delta": -0.09674453735351562
+    },
+    {
+      "gene": "AATF",
+      "synthetic_input": 20,
+      "reconstructed_control": 33.19844436645508,
+      "reconstructed_treatment": 33.17512893676758,
+      "delta": -0.0233154296875
+    },
+    {
+      "gene": "AATK",
+      "synthetic_input": 16,
+      "reconstructed_control": 32.52653121948242,
+      "reconstructed_treatment": 32.56622314453125,
+      "delta": 0.039691925048828125
+    },
+    {
+      "gene": "AB015752.3",
+      "synthetic_input": 46,
+      "reconstructed_control": 28.484272003173828,
+      "reconstructed_treatment": 28.342266082763672,
+      "delta": -0.14200592041015625
+    },
+    {
+      "gene": "AB019440.50",
+      "synthetic_input": 18,
+      "reconstructed_control": 30.649242401123047,
+      "reconstructed_treatment": 30.64319610595703,
+      "delta": -0.006046295166015625
+    },
+    {
+      "gene": "ABALON",
+      "synthetic_input": 3,
+      "reconstructed_control": 28.69508171081543,
+      "reconstructed_treatment": 28.681800842285156,
+      "delta": -0.013280868530273438
+    },
+    {
+      "gene": "ABAT",
+      "synthetic_input": 23,
+      "reconstructed_control": 35.131290435791016,
+      "reconstructed_treatment": 35.24055099487305,
+      "delta": 0.10926055908203125
+    },
+    {
+      "gene": "ABC10-43608400O15.1",
+      "synthetic_input": 40,
+      "reconstructed_control": 29.281343460083008,
+      "reconstructed_treatment": 29.327367782592773,
+      "delta": 0.046024322509765625
+    },
+    {
+      "gene": "ABC10-44372100G24.1",
+      "synthetic_input": 9,
+      "reconstructed_control": 32.54534149169922,
+      "reconstructed_treatment": 32.59347152709961,
+      "delta": 0.048130035400390625
+    },
+    {
+      "gene": "ABC11-4932300O16.1",
+      "synthetic_input": 23,
+      "reconstructed_control": 26.366100311279297,
+      "reconstructed_treatment": 26.224050521850586,
+      "delta": -0.14204978942871094
+    },
+    {
+      "gene": "ABC12-46663800M24.1",
+      "synthetic_input": 6,
+      "reconstructed_control": 28.228248596191406,
+      "reconstructed_treatment": 28.228713989257812,
+      "delta": 0.00046539306640625
+    },
+    {
+      "gene": "ABC12-46663800M24.2",
+      "synthetic_input": 35,
+      "reconstructed_control": 31.213764190673828,
+      "reconstructed_treatment": 31.129549026489258,
+      "delta": -0.08421516418457031
+    },
+    {
+      "gene": "ABC14-1188822O7.1",
+      "synthetic_input": 24,
+      "reconstructed_control": 27.758071899414062,
+      "reconstructed_treatment": 27.728939056396484,
+      "delta": -0.029132843017578125
+    },
+    {
+      "gene": "ABC14-1188822O7.2",
+      "synthetic_input": 16,
+      "reconstructed_control": 30.61810302734375,
+      "reconstructed_treatment": 30.799663543701172,
+      "delta": 0.18156051635742188
+    },
+    {
+      "gene": "ABC7-42404400C24.1",
+      "synthetic_input": 11,
+      "reconstructed_control": 28.866296768188477,
+      "reconstructed_treatment": 28.785335540771484,
+      "delta": -0.08096122741699219
+    },
+    {
+      "gene": "ABC7-481722F1.2",
+      "synthetic_input": 28,
+      "reconstructed_control": 27.725290298461914,
+      "reconstructed_treatment": 27.61334228515625,
+      "delta": -0.11194801330566406
+    },
+    {
+      "gene": "ABCA1",
+      "synthetic_input": 34,
+      "reconstructed_control": 31.597774505615234,
+      "reconstructed_treatment": 31.61382293701172,
+      "delta": 0.016048431396484375
+    },
+    {
+      "gene": "ABCA10",
+      "synthetic_input": 47,
+      "reconstructed_control": 33.383506774902344,
+      "reconstructed_treatment": 33.432464599609375,
+      "delta": 0.04895782470703125
+    },
+    {
+      "gene": "ABCA12",
+      "synthetic_input": 22,
+      "reconstructed_control": 31.261066436767578,
+      "reconstructed_treatment": 31.28497314453125,
+      "delta": 0.023906707763671875
+    },
+    {
+      "gene": "ABCA13",
+      "synthetic_input": 8,
+      "reconstructed_control": 32.69157791137695,
+      "reconstructed_treatment": 32.59331512451172,
+      "delta": -0.09826278686523438
+    },
+    {
+      "gene": "ABCA2",
+      "synthetic_input": 42,
+      "reconstructed_control": 30.396404266357422,
+      "reconstructed_treatment": 30.357608795166016,
+      "delta": -0.03879547119140625
+    },
+    {
+      "gene": "ABCA3",
+      "synthetic_input": 32,
+      "reconstructed_control": 34.722877502441406,
+      "reconstructed_treatment": 34.729042053222656,
+      "delta": 0.00616455078125
+    },
+    {
+      "gene": "ABCA4",
+      "synthetic_input": 35,
+      "reconstructed_control": 24.349716186523438,
+      "reconstructed_treatment": 24.223342895507812,
+      "delta": -0.126373291015625
+    },
+    {
+      "gene": "ABCA5",
+      "synthetic_input": 4,
+      "reconstructed_control": 32.72671890258789,
+      "reconstructed_treatment": 32.79896545410156,
+      "delta": 0.07224655151367188
+    },
+    {
+      "gene": "ABCA6",
+      "synthetic_input": 15,
+      "reconstructed_control": 37.71099090576172,
+      "reconstructed_treatment": 37.85921096801758,
+      "delta": 0.14822006225585938
+    },
+    {
+      "gene": "ABCA7",
+      "synthetic_input": 39,
+      "reconstructed_control": 31.6600341796875,
+      "reconstructed_treatment": 31.61920928955078,
+      "delta": -0.04082489013671875
+    },
+    {
+      "gene": "ABCA8",
+      "synthetic_input": 42,
+      "reconstructed_control": 34.29560852050781,
+      "reconstructed_treatment": 34.37472915649414,
+      "delta": 0.07912063598632812
+    },
+    {
+      "gene": "ABCA9",
+      "synthetic_input": 22,
+      "reconstructed_control": 35.5699462890625,
+      "reconstructed_treatment": 35.74468994140625,
+      "delta": 0.17474365234375
+    },
+    {
+      "gene": "ABCA9-AS1",
+      "synthetic_input": 41,
+      "reconstructed_control": 31.162994384765625,
+      "reconstructed_treatment": 31.269309997558594,
+      "delta": 0.10631561279296875
+    },
+    {
+      "gene": "ABCB1",
+      "synthetic_input": 42,
+      "reconstructed_control": 31.777355194091797,
+      "reconstructed_treatment": 31.78192901611328,
+      "delta": 0.004573822021484375
+    },
+    {
+      "gene": "ABCB10",
+      "synthetic_input": 19,
+      "reconstructed_control": 33.074302673339844,
+      "reconstructed_treatment": 33.04955291748047,
+      "delta": -0.024749755859375
+    },
+    {
+      "gene": "ABCB11",
+      "synthetic_input": 45,
+      "reconstructed_control": 25.88754653930664,
+      "reconstructed_treatment": 25.923240661621094,
+      "delta": 0.035694122314453125
+    },
+    {
+      "gene": "ABCB4",
+      "synthetic_input": 14,
+      "reconstructed_control": 33.62785339355469,
+      "reconstructed_treatment": 33.75362014770508,
+      "delta": 0.12576675415039062
+    },
+    {
+      "gene": "ABCB5",
+      "synthetic_input": 12,
+      "reconstructed_control": 32.040802001953125,
+      "reconstructed_treatment": 32.02485656738281,
+      "delta": -0.0159454345703125
+    },
+    {
+      "gene": "ABCB6",
+      "synthetic_input": 34,
+      "reconstructed_control": 31.83785057067871,
+      "reconstructed_treatment": 31.8150634765625,
+      "delta": -0.022787094116210938
+    },
+    {
+      "gene": "ABCB7",
+      "synthetic_input": 32,
+      "reconstructed_control": 33.239959716796875,
+      "reconstructed_treatment": 33.26746368408203,
+      "delta": 0.02750396728515625
+    },
+    {
+      "gene": "ABCB8",
+      "synthetic_input": 7,
+      "reconstructed_control": 30.446468353271484,
+      "reconstructed_treatment": 30.44951629638672,
+      "delta": 0.003047943115234375
+    },
+    {
+      "gene": "ABCB9",
+      "synthetic_input": 42,
+      "reconstructed_control": 30.639606475830078,
+      "reconstructed_treatment": 30.622699737548828,
+      "delta": -0.01690673828125
+    },
+    {
+      "gene": "ABCC1",
+      "synthetic_input": 10,
+      "reconstructed_control": 32.82756042480469,
+      "reconstructed_treatment": 32.86286163330078,
+      "delta": 0.03530120849609375
+    },
+    {
+      "gene": "ABCC10",
+      "synthetic_input": 41,
+      "reconstructed_control": 31.678424835205078,
+      "reconstructed_treatment": 31.65207290649414,
+      "delta": -0.0263519287109375
+    },
+    {
+      "gene": "ABCC11",
+      "synthetic_input": 0,
+      "reconstructed_control": 29.47561264038086,
+      "reconstructed_treatment": 29.23104476928711,
+      "delta": -0.24456787109375
+    },
+    {
+      "gene": "ABCC12",
+      "synthetic_input": 40,
+      "reconstructed_control": 28.901466369628906,
+      "reconstructed_treatment": 28.94190216064453,
+      "delta": 0.040435791015625
+    },
+    {
+      "gene": "ABCC2",
+      "synthetic_input": 40,
+      "reconstructed_control": 29.23851776123047,
+      "reconstructed_treatment": 29.225204467773438,
+      "delta": -0.01331329345703125
+    },
+    {
+      "gene": "ABCC3",
+      "synthetic_input": 39,
+      "reconstructed_control": 28.40103530883789,
+      "reconstructed_treatment": 28.47952651977539,
+      "delta": 0.0784912109375
+    },
+    {
+      "gene": "ABCC4",
+      "synthetic_input": 33,
+      "reconstructed_control": 30.56467628479004,
+      "reconstructed_treatment": 30.539623260498047,
+      "delta": -0.025053024291992188
+    },
+    {
+      "gene": "ABCC5",
+      "synthetic_input": 24,
+      "reconstructed_control": 35.03944778442383,
+      "reconstructed_treatment": 35.016204833984375,
+      "delta": -0.023242950439453125
+    },
+    {
+      "gene": "ABCC5-AS1",
+      "synthetic_input": 35,
+      "reconstructed_control": 28.031700134277344,
+      "reconstructed_treatment": 27.93236541748047,
+      "delta": -0.099334716796875
+    },
+    {
+      "gene": "ABCC6",
+      "synthetic_input": 14,
+      "reconstructed_control": 28.695659637451172,
+      "reconstructed_treatment": 28.62014389038086,
+      "delta": -0.0755157470703125
+    },
+    {
+      "gene": "ABCC8",
+      "synthetic_input": 39,
+      "reconstructed_control": 29.677154541015625,
+      "reconstructed_treatment": 29.661548614501953,
+      "delta": -0.015605926513671875
+    },
+    {
+      "gene": "ABCC9",
+      "synthetic_input": 28,
+      "reconstructed_control": 29.41010284423828,
+      "reconstructed_treatment": 29.104724884033203,
+      "delta": -0.3053779602050781
+    },
+    {
+      "gene": "ABCD1",
+      "synthetic_input": 23,
+      "reconstructed_control": 32.05795669555664,
+      "reconstructed_treatment": 32.029151916503906,
+      "delta": -0.028804779052734375
+    },
+    {
+      "gene": "ABCD2",
+      "synthetic_input": 25,
+      "reconstructed_control": 33.17921447753906,
+      "reconstructed_treatment": 33.24505615234375,
+      "delta": 0.0658416748046875
+    },
+    {
+      "gene": "ABCD3",
+      "synthetic_input": 29,
+      "reconstructed_control": 34.2022590637207,
+      "reconstructed_treatment": 34.322021484375,
+      "delta": 0.11976242065429688
+    },
+    {
+      "gene": "ABCD4",
+      "synthetic_input": 1,
+      "reconstructed_control": 30.579748153686523,
+      "reconstructed_treatment": 30.59478759765625,
+      "delta": 0.015039443969726562
+    },
+    {
+      "gene": "ABCE1",
+      "synthetic_input": 7,
+      "reconstructed_control": 30.69370460510254,
+      "reconstructed_treatment": 30.725492477416992,
+      "delta": 0.031787872314453125
+    },
+    {
+      "gene": "ABCF1",
+      "synthetic_input": 12,
+      "reconstructed_control": 29.699602127075195,
+      "reconstructed_treatment": 29.75084114074707,
+      "delta": 0.051239013671875
+    },
+    {
+      "gene": "ABCF2",
+      "synthetic_input": 5,
+      "reconstructed_control": 30.20603370666504,
+      "reconstructed_treatment": 30.22469139099121,
+      "delta": 0.018657684326171875
+    },
+    {
+      "gene": "ABCF3",
+      "synthetic_input": 22,
+      "reconstructed_control": 32.461605072021484,
+      "reconstructed_treatment": 32.3675537109375,
+      "delta": -0.09405136108398438
+    },
+    {
+      "gene": "ABCG1",
+      "synthetic_input": 34,
+      "reconstructed_control": 31.843490600585938,
+      "reconstructed_treatment": 31.828094482421875,
+      "delta": -0.0153961181640625
+    },
+    {
+      "gene": "ABCG2",
+      "synthetic_input": 33,
+      "reconstructed_control": 31.646453857421875,
+      "reconstructed_treatment": 31.527807235717773,
+      "delta": -0.11864662170410156
+    },
+    {
+      "gene": "ABCG4",
+      "synthetic_input": 24,
+      "reconstructed_control": 31.459270477294922,
+      "reconstructed_treatment": 31.31715965270996,
+      "delta": -0.14211082458496094
+    },
+    {
+      "gene": "ABCG5",
+      "synthetic_input": 43,
+      "reconstructed_control": 29.613311767578125,
+      "reconstructed_treatment": 29.618366241455078,
+      "delta": 0.005054473876953125
+    },
+    {
+      "gene": "ABCG8",
+      "synthetic_input": 28,
+      "reconstructed_control": 29.0854549407959,
+      "reconstructed_treatment": 28.855880737304688,
+      "delta": -0.22957420349121094
+    },
+    {
+      "gene": "ABHD1",
+      "synthetic_input": 4,
+      "reconstructed_control": 30.04669952392578,
+      "reconstructed_treatment": 30.093093872070312,
+      "delta": 0.04639434814453125
+    },
+    {
+      "gene": "ABHD10",
+      "synthetic_input": 39,
+      "reconstructed_control": 31.67914390563965,
+      "reconstructed_treatment": 31.68307876586914,
+      "delta": 0.0039348602294921875
+    }
+  ]
+}

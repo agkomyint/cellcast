@@ -1,0 +1,11 @@
+{
+  "keyboardGene": "ACT2 / AT3G18780",
+  "sameConditionCorrection": true,
+  "perturbationRun": true,
+  "studyFilters": [
+    "verified",
+    "genetic"
+  ],
+  "mobileOverflow": false,
+  "errors": []
+}

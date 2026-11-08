@@ -1,0 +1,406 @@
+{
+  "components": [],
+  "fonts": [],
+  "format": "pentool",
+  "name": "cellcast-workflow",
+  "pages": [
+    {
+      "canvas": {
+        "background": "#151a1e",
+        "height": 400,
+        "width": 1440
+      },
+      "id": "page-1",
+      "layers": [
+        {
+          "id": "layer-1",
+          "locked": false,
+          "name": "Layer 1",
+          "nodes": [],
+          "visible": true
+        },
+        {
+          "id": "art",
+          "locked": false,
+          "name": "CellCast artwork",
+          "nodes": [
+            {
+              "align": "left",
+              "content": "From a public study to an inspectable result.",
+              "font_family": "Arial",
+              "font_size": 34.0,
+              "font_weight": 600,
+              "id": "heading",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#e4e9ed"
+                }
+              },
+              "x": 56.0,
+              "y": 70.0
+            },
+            {
+              "align": "left",
+              "content": "01",
+              "font_family": "Arial",
+              "font_size": 19.0,
+              "font_weight": 400,
+              "id": "number-0",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                }
+              },
+              "x": 56.0,
+              "y": 145.0
+            },
+            {
+              "align": "left",
+              "content": "Discover",
+              "font_family": "Arial",
+              "font_size": 29.0,
+              "font_weight": 600,
+              "id": "title-0",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#e4e9ed"
+                }
+              },
+              "x": 56.0,
+              "y": 213.0
+            },
+            {
+              "align": "left",
+              "content": "Public Atlas studies",
+              "font_family": "Arial",
+              "font_size": 18.0,
+              "font_weight": 400,
+              "id": "caption-0",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#a6b1b9"
+                }
+              },
+              "x": 56.0,
+              "y": 254.0
+            },
+            {
+              "closed": false,
+              "d": "M 56 289 L 334 289",
+              "id": "rule-0",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#303940"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 2.0
+                }
+              }
+            },
+            {
+              "align": "left",
+              "content": "02",
+              "font_family": "Arial",
+              "font_size": 19.0,
+              "font_weight": 400,
+              "id": "number-1",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                }
+              },
+              "x": 406.0,
+              "y": 145.0
+            },
+            {
+              "align": "left",
+              "content": "Compare",
+              "font_family": "Arial",
+              "font_size": 29.0,
+              "font_weight": 600,
+              "id": "title-1",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#e4e9ed"
+                }
+              },
+              "x": 406.0,
+              "y": 213.0
+            },
+            {
+              "align": "left",
+              "content": "Measured expression",
+              "font_family": "Arial",
+              "font_size": 18.0,
+              "font_weight": 400,
+              "id": "caption-1",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#a6b1b9"
+                }
+              },
+              "x": 406.0,
+              "y": 254.0
+            },
+            {
+              "closed": false,
+              "d": "M 406 289 L 684 289",
+              "id": "rule-1",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#303940"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 2.0
+                }
+              }
+            },
+            {
+              "align": "left",
+              "content": "03",
+              "font_family": "Arial",
+              "font_size": 19.0,
+              "font_weight": 400,
+              "id": "number-2",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                }
+              },
+              "x": 756.0,
+              "y": 145.0
+            },
+            {
+              "align": "left",
+              "content": "Run locally",
+              "font_family": "Arial",
+              "font_size": 29.0,
+              "font_weight": 600,
+              "id": "title-2",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#e4e9ed"
+                }
+              },
+              "x": 756.0,
+              "y": 213.0
+            },
+            {
+              "align": "left",
+              "content": "Browser model inference",
+              "font_family": "Arial",
+              "font_size": 18.0,
+              "font_weight": 400,
+              "id": "caption-2",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#a6b1b9"
+                }
+              },
+              "x": 756.0,
+              "y": 254.0
+            },
+            {
+              "closed": false,
+              "d": "M 756 289 L 1034 289",
+              "id": "rule-2",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#303940"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 2.0
+                }
+              }
+            },
+            {
+              "align": "left",
+              "content": "04",
+              "font_family": "Arial",
+              "font_size": 19.0,
+              "font_weight": 400,
+              "id": "number-3",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#80c9bd"
+                }
+              },
+              "x": 1106.0,
+              "y": 145.0
+            },
+            {
+              "align": "left",
+              "content": "Inspect & export",
+              "font_family": "Arial",
+              "font_size": 29.0,
+              "font_weight": 600,
+              "id": "title-3",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#e4e9ed"
+                }
+              },
+              "x": 1106.0,
+              "y": 213.0
+            },
+            {
+              "align": "left",
+              "content": "Sources, outputs, history",
+              "font_family": "Arial",
+              "font_size": 18.0,
+              "font_weight": 400,
+              "id": "caption-3",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#a6b1b9"
+                }
+              },
+              "x": 1106.0,
+              "y": 254.0
+            },
+            {
+              "closed": false,
+              "d": "M 1106 289 L 1384 289",
+              "id": "rule-3",
+              "kind": "path",
+              "style": {
+                "fill": {
+                  "fallback": "none"
+                },
+                "stroke": {
+                  "fallback": "#303940"
+                },
+                "stroke_linecap": {
+                  "fallback": "round"
+                },
+                "stroke_linejoin": {
+                  "fallback": "round"
+                },
+                "stroke_miterlimit": {
+                  "fallback": 4.0
+                },
+                "stroke_width": {
+                  "fallback": 2.0
+                }
+              }
+            },
+            {
+              "align": "left",
+              "content": "Observed comparisons and model outputs are distinct research workflows.",
+              "font_family": "Arial",
+              "font_size": 18.0,
+              "font_weight": 400,
+              "id": "note",
+              "italic": false,
+              "kind": "text",
+              "letter_spacing": 0.0,
+              "line_height": 1.2,
+              "style": {
+                "fill": {
+                  "fallback": "#a6b1b9"
+                }
+              },
+              "x": 56.0,
+              "y": 355.0
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "name": "Page 1"
+    }
+  ],
+  "styles": {},
+  "version": 4
+}

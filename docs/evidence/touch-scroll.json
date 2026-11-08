@@ -1,0 +1,7 @@
+{
+  "before": 400,
+  "after": 585,
+  "windowScroll": 0,
+  "headerY": 105.5,
+  "method": "Timed touchStart/move/end over the canvas; production CSS, no injected overrides"
+}

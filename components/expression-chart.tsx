@@ -1,0 +1,5 @@
+'use client';
+import {BarChart,Bar,CartesianGrid,XAxis,YAxis,Tooltip,ResponsiveContainer,Legend} from 'recharts';
+export function ExpressionChart({data}:{data:{gene:string;control:number;treatment:number}[]}){
+ return <div className="recharts-expression"><ResponsiveContainer width="100%" height="100%"><BarChart data={data} margin={{top:16,right:12,bottom:28,left:0}} accessibilityLayer><CartesianGrid stroke="var(--border)" vertical={false}/><XAxis dataKey="gene" tick={{fill:'var(--muted)',fontSize:10}} angle={-35} textAnchor="end" interval={0}/><YAxis tick={{fill:'var(--muted)',fontSize:11}} width={36}/><Tooltip contentStyle={{background:'var(--panel)',border:'1px solid var(--border)',color:'var(--text)',fontSize:12}} cursor={{fill:'var(--surface)'}}/><Legend wrapperStyle={{fontSize:11,paddingTop:20}}/><Bar dataKey="control" name="Control reconstruction" fill="var(--cyan)" isAnimationActive={false}/><Bar dataKey="treatment" name="Treatment reconstruction" fill="var(--purple)" isAnimationActive={false}/></BarChart></ResponsiveContainer></div>
+}

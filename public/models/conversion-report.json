@@ -1,0 +1,49 @@
+{
+  "task": "pretrained expression reconstruction; not perturbation prediction",
+  "sequence_length": 128,
+  "checkpoint": {
+    "repository": "perturblab/scgpt-human",
+    "revision": "571a0445d68fa48381f863ff75dd4f6d0eae3dfc"
+  },
+  "checkpoint_sha256": "6cb5d451ab5c4b33eb673adbe4fddc61d2389df1b89b7651a9fe2e557572b922",
+  "onnx_sha256": "ee54dd68c67dd0a543794b816a2c6fa509f05f0625ce128e051f4732a7db3fea",
+  "onnx_bytes": 203463021,
+  "loaded_tensors": 159,
+  "excluded_tensors": [
+    "flag_encoder.weight",
+    "mvc_decoder.gene2query.weight",
+    "mvc_decoder.gene2query.bias",
+    "mvc_decoder.W.weight"
+  ],
+  "cases": [
+    {
+      "case": "fixture",
+      "max_abs_error": 2.288818359375e-05,
+      "latency_ms": 39.203399792313576
+    },
+    {
+      "case": "masked",
+      "max_abs_error": 3.0517578125e-05,
+      "latency_ms": 29.779499862343073
+    },
+    {
+      "case": "zeros",
+      "max_abs_error": 1.9073486328125e-05,
+      "latency_ms": 29.412599746137857
+    },
+    {
+      "case": "ablation",
+      "max_abs_error": 2.47955322265625e-05,
+      "latency_ms": 25.158400181680918
+    }
+  ],
+  "torch": "2.11.0+cu128",
+  "onnxruntime": "1.31.1",
+  "upstream_revision": "cebd6fae655b9c585a4807daa3ac31bb764f06b4",
+  "historical_upstream_parity": {
+    "revision": "4068d67",
+    "path": "TransformerModel.perceptual_forward, standard attention",
+    "strict_full_checkpoint_load": true,
+    "max_abs_error": 0.0
+  }
+}
