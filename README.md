@@ -25,6 +25,8 @@ Public single-cell data and research models often require separate tools and sub
 
 ## A five-minute walkthrough
 
+New to single-cell research? Select **Guided tour** in the app header. Nine spotlight lessons explain studies, cells, genes, measured comparisons, model limits, and research history. Progress saves in this browser; you can pause, resume, or restart. See the [learning tour guide](docs/LEARNING-TOUR.md).
+
 1. Open **Dataset Explorer** and choose Arabidopsis study **E-CURD-4**.
 2. In **Experiment Lab**, choose **Comparison**, select **AT3G18780**, and compare two available cell populations. Inspect the embedding, mean expression, and fraction of expressing cells; open the expression source.
 3. Choose **E-ENAD-30** and **Perturbation response**. Compare **None** with **17beta-estradiol** under **Compound**. This shows a measured treatment response. **E-GEOD-123013** offers a genetic example with wild type and mutant groups.

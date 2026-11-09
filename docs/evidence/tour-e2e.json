@@ -1,0 +1,28 @@
+{
+  "url": "http://127.0.0.1:3006",
+  "errors": [],
+  "widths": [
+    {
+      "width": 1440,
+      "completed": true,
+      "resume": true,
+      "restart": true,
+      "bounds": true
+    },
+    {
+      "width": 768,
+      "completed": true,
+      "resume": true,
+      "restart": true,
+      "bounds": true
+    },
+    {
+      "width": 375,
+      "completed": true,
+      "resume": true,
+      "restart": true,
+      "bounds": true
+    }
+  ],
+  "comparison": "AT3G18780"
+}

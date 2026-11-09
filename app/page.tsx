@@ -14,6 +14,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { DatasetExplorer } from "@/components/dataset-explorer";
 import { ObservedLab } from "@/components/observed-lab";
 import { ModelLibrary } from "@/components/model-library";
+import { ResearchTour } from "@/components/research-tour";
 import { usePageScroll } from "@/lib/use-page-scroll";
 import type { ObservedRun } from "@/lib/observed";
 const sections = [
@@ -117,6 +118,7 @@ export default function Home() {
             <strong>{section}</strong>
           </div>
           <div className="top-status">
+            <ResearchTour ready={ready} onNavigate={setSection} />
             <span>
               <i className="dot" />
               Public study

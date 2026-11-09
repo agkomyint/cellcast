@@ -545,7 +545,7 @@ export function ObservedLab({
           </p>
         )}
 
-        <label>
+        <label data-tour="gene">
           Gene
           <GenePicker
             studyId={studyId}
@@ -576,7 +576,7 @@ export function ObservedLab({
           )}
         </div>
 
-        <label>
+        <label data-tour="population">
           {perturbation ? "Control condition" : "Reference population"}
           <NativeSelect
             aria-label="Group A"

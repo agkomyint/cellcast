@@ -1,5 +1,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+
+/* Guided learning uses the workspace palette and preserves access to highlighted controls. */
+.tour-trigger[data-slot=button]{min-height:40px;gap:7px;font-size:11px;color:var(--cyan);white-space:nowrap}
+body[data-research-tour=active] .gene-picker-popover{z-index:10002}
+.tour-invitation{position:fixed;bottom:24px;right:24px;z-index:80;display:flex;align-items:center;gap:14px;flex-wrap:wrap;max-width:560px;padding:20px;border:1px solid var(--border);border-radius:10px;background:var(--panel);color:var(--text);box-shadow:0 12px 40px #0005}
+.tour-invitation>svg{color:var(--cyan)}.tour-invitation>div{flex:1;min-width:220px}.tour-invitation strong{font-size:13px;font-weight:600}.tour-invitation p{margin-top:5px;font-size:12px;line-height:1.6;color:var(--muted)}.tour-invitation [data-slot=button]{min-height:40px}
+.research-tour-popover .tour-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:-8px;color:var(--cyan);font-size:11px}
+.research-tour-popover .tour-heading button{display:grid;place-items:center;width:40px;height:40px;background:none;border:0;border-radius:5px;color:var(--muted)}.research-tour-popover .tour-heading button:hover{background:var(--surface);color:var(--text)}
+.research-tour-popover progress{display:block;width:100%;height:3px;margin:6px 0 18px;accent-color:var(--cyan);border:0;border-radius:2px;background:var(--surface)}.research-tour-popover progress::-webkit-progress-bar{background:var(--surface)}.research-tour-popover progress::-webkit-progress-value{background:var(--cyan)}
+.research-tour-popover h2{font-size:19px;line-height:1.3;letter-spacing:-.35px;margin-bottom:12px;font-weight:600}.research-tour-popover p{font-size:12px;line-height:1.8;color:var(--muted);white-space:normal}
+.tour-task{border-left:2px solid var(--cyan);padding:0 0 0 12px;margin-top:18px}.tour-task strong{display:block;color:var(--text);font-size:11px;margin-bottom:4px}.tour-actions{display:flex;justify-content:space-between;gap:8px;margin-top:20px}.tour-actions>div{display:flex;gap:8px}.tour-actions [data-slot=button]{min-height:40px;font-size:11px;padding:0 11px}.research-tour-popover .tour-result-status{font-size:11px;margin-top:12px;color:var(--cyan)}.tour-skip{display:block;margin-top:14px;padding:6px 0;min-height:40px;color:var(--muted);background:none;border:0;text-decoration:underline;text-underline-offset:3px;font-size:11px}
+@media(max-width:680px){.top-status{gap:4px!important}.tour-trigger[data-slot=button]{padding:0 7px;font-size:10px}.tour-trigger svg{display:none}.tour-invitation{bottom:12px;right:12px;left:12px;padding:16px;gap:10px}.tour-invitation>div{min-width:200px}.breadcrumb{gap:6px!important;font-size:10px!important}.top-status .dataset-chip{padding:0 7px;font-size:9px}}
 @theme inline {
  --color-background: var(--bg); --color-foreground: var(--text); --color-card:var(--panel); --color-card-foreground:var(--text); --color-popover:var(--panel); --color-popover-foreground:var(--text); --color-primary:var(--cyan); --color-primary-foreground:#10231f; --color-secondary:var(--surface); --color-secondary-foreground:var(--text); --color-muted:var(--surface); --color-muted-foreground:var(--muted); --color-accent:var(--surface); --color-accent-foreground:var(--text); --color-border:var(--border); --color-input:var(--border); --color-ring:var(--cyan); --color-destructive:var(--red); --radius-sm:4px; --radius-md:6px; --radius-lg:8px; --radius-xl:12px;
 }
