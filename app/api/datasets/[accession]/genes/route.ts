@@ -1,4 +1,5 @@
 import { ATLAS, atlasText, study } from "@/lib/atlas";
+export const maxDuration = 300;
 const cache = new Map<
   string,
   { at: number; value: { id: string; label: string }[] }

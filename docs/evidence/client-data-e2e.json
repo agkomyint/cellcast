@@ -1,0 +1,30 @@
+{
+  "url": "http://127.0.0.1:3010",
+  "checkedAt": "2026-11-09T09:24:21.083Z",
+  "atlasRequests": [
+    "https://www.ebi.ac.uk/gxa/sc/json/experiments",
+    "https://www.ebi.ac.uk/gxa/sc/json/cell-plots/E-CURD-4/clusters/metadata/inferred_cell_type_-_authors_labels?plotMethod=UMAP&n_neighbors=20",
+    "https://www.ebi.ac.uk/gxa/sc/json/suggestions?query=NAC001&species=arabidopsis+thaliana",
+    "https://www.ebi.ac.uk/gxa/sc/json/suggestions?query=ACT2&species=arabidopsis+thaliana",
+    "https://www.ebi.ac.uk/gxa/sc/json/suggestions?query=UBQ10&species=arabidopsis+thaliana",
+    "https://www.ebi.ac.uk/gxa/sc/json/suggestions?query=AT1G01010&species=arabidopsis+thaliana",
+    "https://www.ebi.ac.uk/gxa/sc/json/cell-plots/E-CURD-4/expression/AT1G01010?plotMethod=UMAP&n_neighbors=20",
+    "https://www.ebi.ac.uk/gxa/sc/json/cell-plots/E-CURD-4/expression/AT1G01010?plotMethod=UMAP&n_neighbors=20",
+    "https://www.ebi.ac.uk/gxa/sc/json/cell-plots/E-CURD-4/expression/AT1G01010?plotMethod=UMAP&n_neighbors=20",
+    "https://www.ebi.ac.uk/gxa/sc/json/experiments",
+    "https://www.ebi.ac.uk/gxa/sc/json/cell-plots/E-CURD-4/clusters/metadata/inferred_cell_type_-_authors_labels?plotMethod=UMAP&n_neighbors=20",
+    "https://www.ebi.ac.uk/gxa/sc/json/cell-plots/E-CURD-4/clusters/metadata/inferred_cell_type_-_authors_labels?plotMethod=UMAP&n_neighbors=20"
+  ],
+  "proxyRequests": [
+    "http://127.0.0.1:3010/api/datasets/E-CURD-4/configuration",
+    "http://127.0.0.1:3010/api/datasets/E-CURD-4/configuration",
+    "http://127.0.0.1:3010/api/datasets/E-CURD-4/configuration",
+    "http://127.0.0.1:3010/api/datasets/E-CURD-4/configuration",
+    "http://127.0.0.1:3010/api/datasets/E-CURD-4/configuration"
+  ],
+  "errors": [],
+  "failedRequestRecovery": true,
+  "result": "Expression comparison\n\nAT1G01010 / CPM\n\n+2.15\nmean difference\n0\n2\n4\n6\n8\nReference\nComparison\nReference\nColumella root cap cell 5\n\n3.48 CPM mean • 167 cells\n\n1.2% expressing\n\nComparison\nColumella root cap cell 6\n\n5.63 CPM mean • 430 cells\n\n0.9% expressing\n\nHow do I read these results?\nExpression source",
+  "savedExpressionReuse": true,
+  "savedCellRecovery": true
+}

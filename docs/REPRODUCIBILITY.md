@@ -30,7 +30,7 @@ Examples available from EMBL-EBI Single Cell Expression Atlas:
 - `E-GEOD-123013`: Arabidopsis wild type, `Rhd6 mutant` and `Gl2 mutant`, grouped by Genotype.
 - `E-MTAB-6075`: human THP-1 cells, untreated/LPS/palmitate, grouped by Compound.
 
-All source-derived coordinates, measurements and metadata retain source URLs. The explorer accesses a live catalogue; availability and counts can change upstream. Preview limits: 24 MB per upstream response, 150,000 plotted cells, 30-second request timeout. Larger studies remain accessible through their source downloads.
+All source-derived coordinates, measurements and metadata retain source URLs. The explorer accesses a live catalogue; availability and counts can change upstream. Preview limits: 24 MB per upstream response, 150,000 plotted cells, 45 seconds per upstream attempt with one retry for temporary failures. Larger studies remain accessible through their source downloads. The browser now fetches Atlas JSON directly; only study configuration uses the cached server route. See [dataset request behavior](DATASETS.md).
 
 ## Runnable models
 
@@ -51,7 +51,7 @@ CellOracle is listed as a future perturbation-simulation integration, not as an 
 
 Navigation stays fixed while workspace content scrolls. Ordinary wheel gestures scroll over plots; plot zoom uses dedicated buttons. Each table has independent search, sorting, anchored zoom and horizontal/vertical scroll positions. Page positions restore after asynchronous content loads. See the [scroll contract](RESEARCH-UI.md).
 
-Workspace preferences/history and model outputs use localStorage. Dataset previews and observed comparison data use IndexedDB. Table state uses separate keys; page scroll positions use sessionStorage. Clearing site data removes these records. The app requires its local Next.js server; complete offline reload is not supported. Public repository requests use a constrained same-origin proxy; model inference stays in the browser.
+Workspace preferences/history and model outputs use localStorage. Dataset previews and observed comparison data use IndexedDB. Table state uses separate keys; page scroll positions use sessionStorage. Clearing site data removes these records. The app requires its Next.js server for study configuration; complete offline reload is not supported. Public Atlas JSON and model inference run in the browser.
 
 ## Checks
 

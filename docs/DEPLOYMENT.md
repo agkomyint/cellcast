@@ -20,6 +20,6 @@ bun run assets
 
 To regenerate rather than download the exports, follow [REPRODUCIBILITY.md](REPRODUCIBILITY.md). scPlantLLM-derived materials retain CC BY-NC 4.0; the app's MIT license does not replace those terms.
 
-`.vercelignore` excludes local environments, checkpoints, native artwork, recorded screenshots, and generated binaries from CLI source uploads. Runtime files and browser weights are prepared during the build and served as static assets. Inference stays in the user's browser. Public Atlas data is fetched by the Next.js routes.
+`.vercelignore` excludes local environments, checkpoints, native artwork, recorded screenshots, and generated binaries from CLI source uploads. Runtime files and browser weights are prepared during the build and served as static assets. Inference and public Atlas JSON fetching run in the user's browser. Only the small study configuration is proxied and cached by Next.js because Atlas's HTML pages do not allow cross-origin browser reads. The configuration route has a 120-second platform budget for two bounded upstream attempts; legacy API routes retain a 300-second budget.
 
 The app uses Vercel's production-origin environment variable for absolute social-image URLs. `CELLCAST_PUBLIC_URL` can override that origin when using a custom domain. Never commit `.vercel` or credentials.

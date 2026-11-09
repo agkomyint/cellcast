@@ -1,5 +1,7 @@
 # Final research workflow verification
 
+Client-side data update: the researcher-facing app fetches Atlas catalogue, suggestions, cell coordinates, and expression directly in the browser. Only HTML-derived plot configuration uses a cached server route. The full research replay passed again after this change: all seven comparisons, six model runs, and all four pages at four viewport widths. `scripts/atlas-request-checks.mjs` covers header/body timeout recovery, a bounded retry, cache reuse, refresh, non-retryable errors, size caps, and cancellation of one shared subscriber. `scripts/client-data-e2e.mjs` verifies actual cross-origin browser requests, failed-request recovery, expression reuse, and labeled saved-cell fallback. Evidence: [client-data-e2e.json](evidence/client-data-e2e.json).
+
 The production-build replay is `scripts/research-e2e.mjs`. Its latest complete result is recorded in `docs/evidence/research-e2e.json`.
 
 - Seven real analyses passed: two Arabidopsis population comparisons, rice and Human comparisons, Arabidopsis estradiol versus untreated, Rhd6 mutant versus wild type, and Human LPS versus untreated.

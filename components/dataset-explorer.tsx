@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/native-select";
 import { DataGrid } from "@/components/data-grid";
 import { Skeleton } from "@/components/ui/skeleton";
-import type { Study } from "@/lib/atlas";
+import { studies as atlasStudies, ATLAS, type Study } from "@/lib/atlas";
 import { studyDesign } from "@/lib/study-design";
 export function DatasetExplorer({
   onUseStudy,
@@ -24,13 +24,11 @@ export function DatasetExplorer({
     [order, setOrder] = useState("perturbation"),
     [ready, setReady] = useState(false),
     [cached, setCached] = useState(false);
-  const load = async () => {
+  const load = async (refresh = false) => {
     setLoading(true);
     setError("");
     try {
-      const response = await fetch("/api/datasets?refresh=1");
-      const payload = await response.json();
-      if (!response.ok) throw Error(payload.error || "Repository unavailable");
+      const payload = { studies: await atlasStudies(refresh), source: `${ATLAS}json/experiments`, retrievedAt: new Date().toISOString() };
       setStudies(payload.studies);
       setCached(false);
       try {
@@ -169,7 +167,7 @@ export function DatasetExplorer({
             <p>EMBL-EBI public repository</p>
           </div>
         </div>
-        <Button variant="outline" disabled={loading} onClick={load}>
+        <Button variant="outline" disabled={loading} onClick={() => load(true)}>
           <RefreshCw size={14} />
           Refresh
         </Button>
@@ -261,7 +259,7 @@ export function DatasetExplorer({
         <div className="repository-error" role="alert">
           {error}
           {cached ? " Your cached catalogue is available." : ""}
-          <Button variant="outline" onClick={load}>
+          <Button variant="outline" onClick={() => load(true)}>
             Try again
           </Button>
         </div>

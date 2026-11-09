@@ -1,4 +1,5 @@
 import { cells } from "@/lib/atlas";
+export const maxDuration = 300;
 export async function GET(
   request: Request,
   { params }: { params: Promise<{ accession: string }> },

@@ -1,3 +1,4 @@
+import { readAtlasText } from "./atlas-fetch";
 export const ATLAS = "https://www.ebi.ac.uk/gxa/sc/";
 export type Study = {
   id: string;
@@ -48,45 +49,11 @@ type AtlasStudy = {
   lastUpdate: string;
 };
 let cache: { studies: Study[]; at: number } | undefined;
-export async function atlasText(url: string, maxBytes = 24_000_000) {
-  const response = await fetch(url, {
-    signal: AbortSignal.timeout(30000),
-    cache: "no-store",
-  });
-  if (!response.ok)
-    throw Error(
-      `Atlas returned ${response.status}. Try again or open the source study.`,
-    );
-  const reader = response.body?.getReader();
-  if (!reader) throw Error("Atlas returned an empty response");
-  const chunks: Uint8Array[] = [];
-  let size = 0;
-  try {
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      size += value.byteLength;
-      if (size > maxBytes)
-        throw Error(
-          "This dataset exceeds the 24 MB preview limit. Download the full data from the source study.",
-        );
-      chunks.push(value);
-    }
-  } finally {
-    await reader.cancel();
-  }
-  const bytes = new Uint8Array(size);
-  let offset = 0;
-  for (const chunk of chunks) {
-    bytes.set(chunk, offset);
-    offset += chunk.length;
-  }
-  return new TextDecoder().decode(bytes);
-}
+export const atlasText = readAtlasText;
 export async function studies(refresh = false): Promise<Study[]> {
   if (!refresh && cache && Date.now() - cache.at < 3600000)
     return cache.studies;
-  const payload = JSON.parse(await atlasText(`${ATLAS}json/experiments`));
+  const payload = JSON.parse(await atlasText(`${ATLAS}json/experiments`, 24_000_000, { refresh }));
   if (!Array.isArray(payload.experiments))
     throw Error("Unexpected Atlas catalogue response");
   const data = payload.experiments
@@ -112,13 +79,47 @@ export async function study(id: string) {
   if (!found) throw Error("Study not found in the Atlas catalogue");
   return found;
 }
-type PlotConfig = {
+
+export async function geneSuggestions(id: string, query = "", signal?: AbortSignal) {
+  const source = await study(id);
+  query = query.trim().slice(0, 80);
+  const seeds = query ? [query]
+    : source.species.startsWith("Arabidopsis") ? ["AT1G01010", "AT3G18780", "AT4G05320"]
+    : source.species === "Homo sapiens" ? ["ENSG00000141510", "ENSG00000115415", "ENSG00000075624"]
+    : source.species.includes("Japonica") ? ["Os01g0100100"] : [];
+  const names: Record<string, string> = { AT1G01010: "NAC001", AT3G18780: "ACT2", AT4G05320: "UBQ10", ENSG00000141510: "TP53", ENSG00000115415: "STAT1", ENSG00000075624: "ACTB" };
+  const results = await Promise.all(seeds.map(async q => {
+    const url = new URL(`${ATLAS}json/suggestions`);
+    url.searchParams.set("query", query ? q : names[q] || q);
+    url.searchParams.set("species", source.species.toLowerCase());
+    const payload = JSON.parse(await atlasText(url.toString(), 1_000_000, { signal }));
+    return Array.isArray(payload) ? payload : [];
+  }));
+  const suggestions: { id: string; label: string }[] = [];
+  const seen = new Set<string>();
+  for (const item of results.flat()) {
+    if (typeof item.category !== "string" || !/^[A-Za-z0-9_.:-]{1,100}$/.test(item.category) || typeof item.term !== "string") continue;
+    if (!query && !seeds.includes(item.category)) continue;
+    if (!seen.has(item.category)) { seen.add(item.category); suggestions.push({ id: item.category, label: item.term }); }
+  }
+  return { suggestions: suggestions.slice(0, 20), species: source.species, scope: "organism" };
+}
+export type PlotConfig = {
   ks: number[];
   selectedK: number;
   metadata: { value: string; label: string }[];
   defaultPlotMethodAndParameterisation: Record<string, Record<string, number>>;
 };
-async function configuration(id: string): Promise<PlotConfig> {
+export async function configuration(id: string, signal?: AbortSignal): Promise<PlotConfig> {
+  if (!/^E-[A-Z]+-\d+$/.test(id)) throw Error("Invalid study accession");
+  // Atlas permits CORS for JSON, but not its HTML study pages. Only this small
+  // configuration crosses our server; measured cell data is fetched directly.
+  if (typeof window !== "undefined") {
+    const response = await fetch(`/api/datasets/${id}/configuration`, { signal });
+    const payload = await response.json();
+    if (!response.ok) throw Error(payload.error || "Study configuration is unavailable. Retry or open the source study.");
+    return payload;
+  }
   const html = await atlasText(`${ATLAS}experiments/${id}`);
   const match = html.match(/content:\s*(\{[^\n]+\}),?\s*\n/);
   if (!match)
@@ -136,11 +137,12 @@ export async function cells(
   id: string,
   gene?: string,
   groupBy?: string,
+  signal?: AbortSignal,
 ): Promise<CellData> {
   await study(id);
   if (gene && !/^[a-zA-Z0-9_.:-]{1,100}$/.test(gene))
     throw Error("Enter a valid source gene identifier");
-  const config = await configuration(id);
+  const config = await configuration(id, signal);
   const methods = config.defaultPlotMethodAndParameterisation;
   const method = methods.UMAP ? "UMAP" : Object.keys(methods)[0];
   if (!method) throw Error("No embedding is available for this study");
@@ -166,7 +168,7 @@ export async function cells(
   url.searchParams.set("plotMethod", method);
   for (const [k, v] of Object.entries(parameters))
     url.searchParams.set(k, String(v));
-  const data = JSON.parse(await atlasText(url.toString()));
+  const data = JSON.parse(await atlasText(url.toString(), 24_000_000, { signal }));
   if (!Array.isArray(data.series))
     throw Error("Atlas returned no cell data for this query");
   if (gene && (!Number.isFinite(data.min) || !Number.isFinite(data.max)))

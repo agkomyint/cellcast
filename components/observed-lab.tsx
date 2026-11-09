@@ -46,19 +46,12 @@ import { cacheDataset } from "@/lib/dataset-cache";
 
 import { compareObserved, type ObservedRun } from "@/lib/observed";
 
-import type { CellData, CellPoint, Study } from "@/lib/atlas";
+import { cells, studies as atlasStudies, type CellData, type CellPoint, type Study } from "@/lib/atlas";
 
 const Scatter = dynamic(() => import("@/components/cell-scatter"), {
   ssr: false,
   loading: () => <Skeleton className="h-80 w-full" />,
 });
-
-async function get<T>(url: string, signal?: AbortSignal): Promise<T> {
-  const r = await fetch(url, { signal });
-  const data = await r.json();
-  if (!r.ok) throw Error(data.error || "Data request failed");
-  return data;
-}
 
 export function ObservedLab({
   studyId,
@@ -105,12 +98,16 @@ export function ObservedLab({
   }, [studyId]);
   const requestId = useRef(0);
   const [picked, setPicked] = useState<CellPoint>();
+  const [reloadVersion, setReloadVersion] = useState(0);
+  const [errorTask, setErrorTask] = useState<"study" | "comparison">("study");
+  const [dataNotice, setDataNotice] = useState("");
+  const [expressionNotice, setExpressionNotice] = useState("");
 
   useEffect(() => {
-    get<{ studies: Study[] }>("/api/datasets")
-      .then((r) => setStudies(r.studies))
-      .catch((e) => setError(e.message));
-  }, []);
+    let active = true;
+    atlasStudies().then(s => { if (active) setStudies(s); }).catch(e => { if (active) { setError(e.message); setErrorTask("study"); } });
+    return () => { active = false; };
+  }, [reloadVersion]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -118,6 +115,9 @@ export function ObservedLab({
     setLoading(true);
     setBusy(false);
     setError("");
+    setErrorTask("study");
+    setDataNotice("");
+    setExpressionNotice("");
     setData(undefined);
     setExpression(undefined);
     setResult(undefined);
@@ -162,25 +162,30 @@ export function ObservedLab({
       setGene(saved.gene || (studyId === "E-CURD-4" ? "AT1G01010" : ""));
     };
 
+    let savedPreview: CellData | undefined;
     (async () => {
       try {
         const cached = (await cacheDataset(
           `${studyId}:${grouping || "default"}`,
         ).catch(() => undefined)) as CellData | undefined;
         if (id !== requestId.current) return;
-        if (cached?.points?.length) apply(cached);
-        const fresh = await get<CellData>(
-          `/api/datasets/${studyId}${grouping ? "?groupBy=" + encodeURIComponent(grouping) : ""}`,
-          controller.signal,
-        );
+        if (cached?.points?.length) {
+          savedPreview = cached;
+          apply(cached);
+          setDataNotice("Showing saved cells while checking Atlas for an update.");
+        }
+        const fresh = await cells(studyId, undefined, grouping || undefined, controller.signal);
         if (id !== requestId.current) return;
         apply(fresh);
+        setDataNotice("");
         await cacheDataset(`${studyId}:${grouping || "default"}`, fresh).catch(
           () => {},
         );
       } catch (e) {
-        if (id === requestId.current)
+        if (id === requestId.current && !controller.signal.aborted) {
           setError(e instanceof Error ? e.message : String(e));
+          if (savedPreview) setDataNotice(`Atlas could not be refreshed. Showing saved cells retrieved ${new Date(savedPreview.retrievedAt).toLocaleString()}.`);
+        }
       } finally {
         if (id === requestId.current) setLoading(false);
       }
@@ -190,7 +195,7 @@ export function ObservedLab({
       controller.abort();
       requestId.current++;
     };
-  }, [studyId, grouping]);
+  }, [studyId, grouping, reloadVersion]);
 
   useEffect(() => {
     if (!data) return;
@@ -322,11 +327,18 @@ export function ObservedLab({
     const id = ++requestId.current;
     setBusy(true);
     setError("");
+    setErrorTask("comparison");
+    setExpressionNotice("");
     setResult(undefined);
     try {
-      const observed = await get<CellData>(
-        `/api/datasets/${studyId}?gene=${encodeURIComponent(gene.trim())}`,
-      );
+      const saved = await cacheDataset(`expression:${studyId}:${gene.trim()}`).catch(() => undefined) as CellData | undefined;
+      let observed: CellData;
+      if (saved?.points?.length && Date.now() - Date.parse(saved.retrievedAt) < 3_600_000) {
+        observed = saved;
+        setExpressionNotice(`Using saved measured expression retrieved ${new Date(saved.retrievedAt).toLocaleString()}.`);
+      } else {
+        observed = await cells(studyId, gene.trim());
+      }
       if (id !== requestId.current) return;
 
       const stats = compareObserved(data, observed, groupA, groupB);
@@ -705,9 +717,10 @@ export function ObservedLab({
         {error && (
           <div className="repository-error" role="alert">
             {error}
-            <Button variant="outline" onClick={() => window.location.reload()}>
-              Reload study
+            <Button variant="outline" disabled={loading || busy} onClick={() => errorTask === "comparison" ? run() : setReloadVersion(v => v + 1)}>
+              {errorTask === "comparison" ? "Retry comparison" : "Retry study"}
             </Button>
+            <a href={`https://www.ebi.ac.uk/gxa/sc/experiments/${studyId}`} target="_blank" rel="noreferrer">Open source study <ArrowUpRight size={12} /></a>
           </div>
         )}
 
@@ -733,6 +746,7 @@ export function ObservedLab({
       </aside>
 
       <section className="analysis-canvas" aria-label="Analysis workspace">
+        {(dataNotice || expressionNotice) && <p className="catalogue-note" role="status">{[dataNotice, expressionNotice].filter(Boolean).join(" ")}</p>}
         <div className="analysis-toolbar">
           <Tabs value={activeTab} onValueChange={setActiveTab}>
             <TabsList>

@@ -4,6 +4,7 @@ import { Popover } from "radix-ui";
 import { Check, ChevronsUpDown, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { geneSuggestions } from "@/lib/atlas";
 type Gene = { id: string; label: string };
 export function GenePicker({
   studyId,
@@ -44,12 +45,8 @@ export function GenePicker({
     const timer = setTimeout(
       async () => {
         try {
-          const r = await fetch(
-            `/api/datasets/${studyId}/genes?q=${encodeURIComponent(query)}`,
-            { signal: controller.signal },
-          );
-          const data = await r.json();
-          if (!r.ok) throw Error(data.error || "Gene search unavailable");
+          const data = await geneSuggestions(studyId, query, controller.signal);
+          if (controller.signal.aborted) return;
           setGenes(data.suggestions);
         } catch (e) {
           if (!controller.signal.aborted) {

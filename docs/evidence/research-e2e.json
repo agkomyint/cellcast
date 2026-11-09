@@ -40,38 +40,38 @@
     {
       "model": "scplant",
       "cell": "SRR8206656-AACTGTGGACAG",
-      "result": "Cell embedding\n\n512 values • 229 ms • numerical error 3.1e-6\n\nExport"
+      "result": "Cell embedding\n\n512 values • 176 ms • numerical error 3.1e-6\n\nExport"
     },
     {
       "model": "scplant",
       "cell": "SRR8206654-CTACCATACGGT",
-      "result": "Cell embedding\n\n512 values • 145 ms • numerical error 2.1e-6\n\nExport"
+      "result": "Cell embedding\n\n512 values • 162 ms • numerical error 2.1e-6\n\nExport"
     },
     {
       "model": "scplant",
       "cell": "SRR8206655-AAGATGTTTTAA",
-      "result": "Cell embedding\n\n512 values • 186 ms • numerical error 3.0e-6\n\nExport"
+      "result": "Cell embedding\n\n512 values • 140 ms • numerical error 3.0e-6\n\nExport"
     },
     {
       "model": "scgpt",
       "cell": "SAMEA5215594",
-      "result": "Reconstructed expression\n\n128 values • 249 ms • numerical error 2.3e-5\n\nExport"
+      "result": "Reconstructed expression\n\n128 values • 294 ms • numerical error 2.3e-5\n\nExport"
     },
     {
       "model": "scgpt",
       "cell": "SAMEA5215595",
-      "result": "Reconstructed expression\n\n128 values • 303 ms • numerical error 1.7e-5\n\nExport"
+      "result": "Reconstructed expression\n\n128 values • 346 ms • numerical error 1.7e-5\n\nExport"
     },
     {
       "model": "scgpt",
       "cell": "SAMEA5215581",
-      "result": "Reconstructed expression\n\n128 values • 248 ms • numerical error 1.9e-5\n\nExport"
+      "result": "Reconstructed expression\n\n128 values • 245 ms • numerical error 1.9e-5\n\nExport"
     }
   ],
   "scroll": [
     {
       "case": "wheel over plot",
-      "scrollTop": 428,
+      "scrollTop": 342,
       "headerY": 0
     },
     {
@@ -196,5 +196,5 @@
     }
   ],
   "errors": [],
-  "invalidGene": "Gene ID not found in this source study. Use a stable Ensembl or TAIR identifier, not a gene symbol.\nReload study"
+  "invalidGene": "Gene ID not found in this source study. Use a stable Ensembl or TAIR identifier, not a gene symbol.\nRetry comparison\nOpen source study"
 }

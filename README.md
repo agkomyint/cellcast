@@ -65,20 +65,18 @@ Observed perturbation responses are descriptive comparisons of published measure
 ![CellCast workflow: discover, compare, run locally, inspect and export](public/brand/cellcast-workflow.png)
 
 ```text
-Single Cell Expression Atlas
-            │
-  constrained Next.js dataset routes
-            │
-     research workspace ───── local history / IndexedDB cache
-            │
-       browser worker
-            │
-   ONNX Runtime Web · WASM / WebGPU
-            │
-     inspect and export outputs
+Atlas JSON ── direct browser fetch ───┐
+                                     ▼
+Study HTML ── cached configuration ── research workspace
+                                     ├── local history / IndexedDB cache
+                                     └── browser worker
+                                          │
+                                 ONNX Runtime Web · WASM / WebGPU
+                                          │
+                                  inspect and export outputs
 ```
 
-The interface uses **Next.js, React, TypeScript, shadcn/ui, deck.gl, Recharts, and TanStack Virtual**. Public data requests pass through constrained same-origin routes. Model inference runs locally in the browser. The application still requires its Next.js server and is not a complete offline application.
+The interface uses **Next.js, React, TypeScript, shadcn/ui, deck.gl, Recharts, and TanStack Virtual**. The browser fetches the public catalogue, gene suggestions, cell coordinates, and expression directly from Atlas. Only study configuration needs a cached same-origin route because Atlas blocks browser access to its HTML pages. Model inference runs locally in the browser. The application still requires its Next.js server and is not a complete offline application.
 
 ## Verify and explore the code
 
